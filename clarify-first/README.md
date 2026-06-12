@@ -1,6 +1,6 @@
 # Clarify First
 
-[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
 
 Ask before acting when requirements are ambiguous.
 
@@ -13,10 +13,13 @@ Use it when a task could be interpreted in multiple ways, the scope is unclear, 
 ## Features
 
 - Detects ambiguous, incomplete, or open-ended requests automatically.
+- Checks for false premises before entering clarification.
 - Presents concrete options using lettered choices (`A`, `B`, `C`, … plus `Other`).
+- Groups up to 5 tightly coupled blockers in one message.
 - Marks a recommended option when a clear default exists.
 - Explains the trade-off of each option in one sentence.
-- Keeps clarifying until all blocking decisions are explicit.
+- Keeps clarifying up to 5 rounds, then states any remaining assumptions and proceeds.
+- Outputs a short clarification snapshot after the user confirms the path.
 
 ## Installation
 
@@ -69,7 +72,7 @@ clarify-first/
 
 ## Versioning
 
-Current version: [v0.1.1](VERSION).
+Current version: [v0.2.0](VERSION).
 
 This is a pre-1.0 skill. Rules may be refined as more clarification scenarios are covered.
 
