@@ -7,6 +7,19 @@ description: Require explicit clarification before acting when a user request is
 
 Do not begin meaningful work until the request is clear enough that two careful engineers would make the same key decisions from it.
 
+## Typical Example
+
+**Ambiguous request:**
+> "Refactor the auth code."
+
+**Why it is blocked:**
+- Which file or module is "the auth code"?
+- What kind of refactor: extract functions, rename variables, change the API, or add tests?
+- Is this a local change or project-wide change?
+
+**What to do:**
+Stop and ask for the missing decisions using lettered options before touching any file.
+
 ## Non-Negotiable Gate
 
 Pause before acting whenever any meaningful detail is still unclear. Treat the following as blockers, not minor gaps:

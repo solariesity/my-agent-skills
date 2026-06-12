@@ -1,5 +1,7 @@
 # Clarify First
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 在需求不明确时，先问清楚再行动。
 
 ## 简介
@@ -43,13 +45,9 @@ rm -rf /tmp/my-agent-skills
 
 ## 用法
 
-显式调用 Skill：
+将 `SKILL.md` 加载到 Agent 环境中。当请求含糊或缺少关键信息时，skill 会自动生效。
 
-```text
-/clarify-first
-```
-
-或在提示中要求 Agent 使用它：
+也可以在提示词中显式调用：
 
 ```text
 开始前先用 $clarify-first。我想重构 auth 模块，但不确定是原地修改还是加 feature flag。
@@ -64,13 +62,16 @@ clarify-first/
 ├── SKILL.md          # Skill 行为与澄清规则
 ├── README.md         # 英文文档
 ├── README.zh-CN.md   # 中文文档
+├── VERSION           # Skill 版本
 └── agents/
     └── openai.yaml   # UI 元数据（显示名、默认提示词）
 ```
 
 ## 版本
 
-本 Skill 与父仓库统一版本管理。当前版本见顶层 [`VERSION`](../VERSION) 文件。
+当前版本：[v0.1.0](VERSION)。
+
+这是 1.0 之前的 skill，规则可能会随着更多澄清场景的加入而细化。
 
 ## 贡献
 

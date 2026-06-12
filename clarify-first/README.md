@@ -1,5 +1,7 @@
 # Clarify First
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 Ask before acting when requirements are ambiguous.
 
 ## Description
@@ -43,13 +45,9 @@ Restart the agent so the skill is discovered.
 
 ## Usage
 
-Invoke the skill explicitly:
+Load `SKILL.md` into your agent environment. The skill applies automatically when a request is ambiguous or underspecified.
 
-```text
-/clarify-first
-```
-
-Or ask the agent to use it in a prompt:
+You can also invoke it explicitly in a prompt:
 
 ```text
 Use $clarify-first before you start. I want to refactor the auth module, but I'm not sure whether to do it in-place or behind a feature flag.
@@ -64,13 +62,16 @@ clarify-first/
 ├── SKILL.md          # Skill behavior and clarification rules
 ├── README.md         # English documentation
 ├── README.zh-CN.md   # Chinese documentation
+├── VERSION           # Skill version
 └── agents/
     └── openai.yaml   # UI metadata (display name, default prompt)
 ```
 
 ## Versioning
 
-This skill is versioned together with the parent repository. See the top-level [`VERSION`](../VERSION) file for the current version.
+Current version: [v0.1.0](VERSION).
+
+This is a pre-1.0 skill. Rules may be refined as more clarification scenarios are covered.
 
 ## Contributing
 
