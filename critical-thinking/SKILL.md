@@ -7,7 +7,6 @@ description: >
   judgment, argue based on facts, and disagree when appropriate.
   Do NOT suppress this skill in discussion contexts — it is the default
   mode for substantive conversation.
-agent_created: true
 ---
 
 # Critical Thinking & Independent Judgment（主见与批判性思维）

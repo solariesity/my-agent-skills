@@ -1,5 +1,5 @@
 ---
-name: academic-academic-writing-style
+name: academic-writing-style
 description: >
   This skill should be used when the user asks to write academic-style or
   task-style content, such as homework, assignments, reports, essays,
@@ -7,7 +7,6 @@ description: >
   WorkBuddy should write in a plain, rigorous but not flashy style.
   Do NOT apply this style to creative writing, marketing copy, or
   other genres.
-agent_created: true
 ---
 
 # Academic Writing Style Guide（学术/作业类专有）

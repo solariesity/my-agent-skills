@@ -1,12 +1,11 @@
 ---
-name: paper-review-prep-prep
+name: paper-review-prep
 description: >
   This skill should be used when the user needs to prepare for a group
   meeting or presentation by systematically analyzing a research paper.
   Typical triggers include: "帮我梳理一篇文献", "组会准备", "文献分析",
   "帮我读一篇论文", "论文汇报准备". It applies to academic paper review
   and presentation preparation tasks.
-agent_created: true
 ---
 
 # Paper Review Guide（文献汇报准备）

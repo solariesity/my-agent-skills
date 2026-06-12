@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Writing Style"
+  short_description: "Write plain, rigorous academic or task-style content."
+  default_prompt: "Use $academic-writing-style to write this in a plain, rigorous academic style suitable for a student submission."

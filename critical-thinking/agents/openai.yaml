@@ -1,0 +1,4 @@
+interface:
+  display_name: "Critical Thinking"
+  short_description: "Express independent judgment and disagree when appropriate."
+  default_prompt: "Use $critical-thinking. Give your independent judgment, base it on facts, and disagree if my claim seems wrong."
