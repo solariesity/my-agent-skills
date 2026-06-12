@@ -126,6 +126,27 @@ Use badges only when they provide real value. Common useful badges:
 
 Place badges directly under the project title.
 
+## Release Guide (`RELEASE_GUIDE.md`)
+
+When a project ships release packages (zip archives, skill bundles, distribution folders), provide a `RELEASE_GUIDE.md` with:
+
+1. **Release Goal** — What the package should achieve.
+2. **Release Profiles** — Minimal vs developer package, with directory trees.
+3. **File Checklist** — Required, optional, and excluded files.
+4. **Pre-Release Checklist** — Steps to verify before packaging.
+5. **Release Metadata** — Title and a short summary of highlights.
+6. **Archive Shape** — Top-level folder name and packaging instructions.
+7. **License Note** — Reminder to include a license for public releases.
+
+### Release Guide Style Rules
+
+- Keep section titles concise and action-oriented.
+- Use directory trees to show package contents.
+- Group files into `Required`, `Optional`, and `Excluded`.
+- Exclude generated directories (`.git/`, `__pycache__/`, `.tmp-tests/`) and local notes.
+- State clearly whether `tests/` belongs in the package for each profile.
+- Include a copy-pasteable verification command when applicable.
+
 ## When Reviewing an Existing README
 
 1. Check that all required sections are present or intentionally omitted.

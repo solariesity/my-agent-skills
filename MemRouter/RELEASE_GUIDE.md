@@ -1,24 +1,22 @@
 # Release Guide
 
-This document describes the recommended release package for MemRouter `v0.5.0`.
+This guide describes how to package MemRouter `v0.5.0` for distribution.
 
-## Recommended Release Goal
+## Release Goal
 
-Package MemRouter as a reusable skill folder that is:
+A release package should be:
 
-- complete enough to be usable immediately
-- small enough to avoid shipping unnecessary development artifacts
-- consistent with the current stable feature set
+- Complete enough to use immediately as a skill.
+- Small enough to avoid shipping development-only artifacts.
+- Consistent with the current stable feature set.
 
-## Recommended Release Profiles
+## Release Profiles
 
-Use one of these two release shapes depending on the audience.
+Choose one of the two profiles below based on the audience.
 
-### 1. Minimal End-User Package
+### Minimal Package
 
-Recommended when the release is mainly for skill installation and direct use.
-
-Include:
+Best for end-users who only want to install and use the skill.
 
 ```text
 MemRouter-v0.5.0/
@@ -36,9 +34,9 @@ MemRouter-v0.5.0/
     └── memrouter_core.py
 ```
 
-### 2. Developer Package
+### Developer Package
 
-Recommended when you want downstream users to validate behavior, run tests, or continue development.
+Best when downstream users need to run tests or continue development.
 
 Include everything from the minimal package, plus:
 
@@ -53,9 +51,9 @@ MemRouter-v0.5.0/
     └── test_routes.py
 ```
 
-## Exact Recommended Files
+## File Checklist
 
-If you want a file-by-file checklist, these are the current recommended release files:
+### Required
 
 - `SKILL.md`
 - `README.md`
@@ -67,18 +65,11 @@ If you want a file-by-file checklist, these are the current recommended release 
 - `scripts/memrouter_cli.py`
 - `scripts/memrouter_core.py`
 
-Optional:
+### Optional
 
-- `tests/support.py`
-- `tests/test_cli.py`
-- `tests/test_decide.py`
-- `tests/test_recall.py`
-- `tests/test_remember.py`
-- `tests/test_routes.py`
+- `tests/*.py`
 
-## Recommended Files To Exclude
-
-Do not include these in the release artifact:
+### Excluded
 
 - `.git/`
 - `.gitignore`
@@ -87,62 +78,41 @@ Do not include these in the release artifact:
 - `*.pyc`
 - `VERSION_RECORDS.md`
 
-Exclude `tests/` when you want the smallest end-user package.
-
-## Why Tests Are Optional In Release
-
-Keep `tests/` in the development repository, but exclude it from a minimal end-user release unless you explicitly want a developer-facing distribution.
-
-Recommended default:
-
-- repository: include `tests/`
-- release zip: exclude `tests/`
+Keep `tests/` in the repository, but exclude it from the minimal release package unless you are shipping the developer package.
 
 ## Pre-Release Checklist
 
-Before packaging a release, verify:
+Before packaging, verify:
 
 1. `README.md` and `README.zh-CN.md` match the current CLI behavior.
-2. `SKILL.md` still matches the actual workflow and command examples.
-3. `agents/openai.yaml` still matches the current skill positioning.
-4. `python -m unittest discover -s tests -v` passes in the development repo.
+2. `SKILL.md` matches the actual workflow and command examples.
+3. `agents/openai.yaml` matches the current skill positioning.
+4. All tests pass: `python -m unittest discover -s tests -v`
 5. The release folder contains no temp files or Python cache files.
 6. The archive top-level folder is named `MemRouter-v0.5.0/`.
 
-## Suggested Release Title
+## Release Metadata
 
-Recommended title:
+- **Title:** `MemRouter v0.5.0`
+- **Summary highlights:**
+  - Deterministic markdown memory routing by type, user, project, and date
+  - Safe write semantics with exact dedupe and topic-aware upsert
+  - Precise `created_at` timestamps without breaking exact dedupe
+  - Scoped recall with project-session boundary protection
+  - Unicode-safe route names
+  - Heuristic decision layer via `decide`
+  - Basic English and Chinese heuristic support
 
-```text
-MemRouter v0.5.0
-```
+## Archive Shape
 
-## Suggested Release Summary
-
-Suggested short summary:
-
-- deterministic markdown memory routing by type, user, project, and date
-- safe write semantics with exact dedupe and topic-aware upsert
-- precise `created_at` timestamps in memory entries without breaking exact dedupe
-- scoped recall with project-session boundary protection
-- Unicode-safe route names
-- heuristic decision layer via `decide`
-- basic English and Chinese heuristic support for trivial chat, preferences, tasks, and topic inference
-
-## Recommended Archive Shape
-
-If you are distributing a zip, the top-level folder should be:
+If distributing a zip, create the archive from a clean copy of the package contents. The top-level folder must be:
 
 ```text
 MemRouter-v0.5.0/
 ```
 
-Inside that folder, keep the same structure shown above.
+Do not zip the raw repository root, as that may include Git metadata, caches, or ignored files.
 
-## Practical Packaging Tip
+## License
 
-Create the release from a clean copy of the repository contents rather than zipping the whole repo root blindly. That avoids accidentally shipping Git metadata, caches, local notes, or ignored files.
-
-## One Extra Recommendation
-
-If this release is meant for public reuse outside your own environment, decide whether you want to add a `LICENSE` file before publishing. That is not a code issue, but it affects whether other people can safely reuse the project.
+If the release is meant for public reuse, add a `LICENSE` file before publishing.
