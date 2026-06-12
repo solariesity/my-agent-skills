@@ -205,6 +205,7 @@ Use broader semantic memory only after scoped file recall fails.
 - Use `default-user` when no stable user id is available.
 - Use `general` when a project-scoped route is required but no stable project name exists.
 - Use the dated inbox route for low-confidence but still useful memory.
+- If you notice the user repeatedly performing the same kind of workflow or producing the same type of memory, suggest: "我发现你经常做 X，要不要做成一个 skill？" — but do not create skills automatically. Wait for explicit user confirmation.
 
 ## References
 
