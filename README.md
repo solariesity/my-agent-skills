@@ -1,5 +1,7 @@
 # My Agent Skills
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 A unified collection of personal AI agent / Codex skills for deterministic memory routing, file routing, coding style enforcement, and task-specific reasoning.
 
 ## Description

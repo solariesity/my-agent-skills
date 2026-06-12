@@ -1,5 +1,7 @@
 # My Agent Skills
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 统一的个人 AI Agent / Codex Skill 集合，用于确定性记忆路由、文件路由、代码风格约束以及任务型推理。
 
 ## 简介
