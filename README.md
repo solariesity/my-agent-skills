@@ -1,55 +1,69 @@
 # My Agent Skills
 
-这个仓库汇总我自己编写和整理的 AI Agent / Codex Skill，方便统一管理和使用。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## 我的 Skills
+A unified collection of personal AI agent / Codex skills for deterministic memory routing, file routing, coding style enforcement, and task-specific reasoning.
 
-| Skill | 目录 | 简介 |
-|-------|------|------|
-| **memory-router** | [`memory-router/`](memory-router/) | 将对话记忆按类型、用户、项目、时间路由到确定性的 markdown 文件，支持决定、写入、回顾等能力。 |
-| **file-router** | [`file-router/`](file-router/) | 将用户分享、Agent 生成或聊天中明确的备忘文本，按域/项目/角色存储到结构化的 `./files/` 工作树。 |
-| **python-style-skill** | [`python-style-skill/`](python-style-skill/) | 针对研究和训练代码的 Python 风格清理约束：命名、注释、文件命名、稳定可解析的输出等。 |
-| **github-readme-style** | [`github-readme-style/`](github-readme-style/) | 规范 GitHub 项目 README，默认输出中英双语，包含版本号、目录结构、安装使用等章节。 |
-| **critical-thinking** | [`critical-thinking/`](critical-thinking/) | 讨论、分析、判断类任务中的独立思考约束，强调基于事实判断并在必要时提出异议。 |
-| **paper-review-prep** | [`paper-review-prep/`](paper-review-prep/) | 论文阅读、文献梳理和组会汇报准备，覆盖背景、方法、实验到汇报提纲整理。 |
-| **academic-writing-style** | [`academic-writing-style/`](academic-writing-style/) | 学术写作和任务型文本生成，强调清楚、朴实、规范，避免过度修辞。 |
+## Description
 
-## 推荐的外部 Skills / MCP Servers
+This repository consolidates scattered skill projects into a single monorepo. Each skill is self-contained under its own directory and can be installed independently into any Codex / Claude Code compatible environment.
 
-下面是一些我觉得好用或值得参考的外部 Skill 与工具：
+## Features
 
-### Skills
+- Unified management of all personal agent skills in one repository
+- Bilingual documentation (`README.md` + `README.zh-CN.md`) for every skill
+- Deterministic routing for conversations, files, and generated outputs
+- Coding style guides for research and training code
+- Critical thinking, paper review, and academic writing helpers
 
-#### andrej-karpathy-skills
+## Installation
 
-- 项目地址：https://github.com/duolahypercho/andrej-karpathy-skills
-- 简介：一个面向 Codex 的 Andrej Karpathy 风格编码规范 Skill，把“先思考、保持简单、只做必要改动、用可验证目标收尾”这类实践打包成可复用的 Skill 和插件，适合提升日常编码代理的稳定性与可控性。
+Skills are distributed as plain directories. To install a single skill without cloning the entire repository permanently:
 
-### MCP Servers（工具类）
+```bash
+# 1. Clone to a temporary location
+git clone https://github.com/<your-username>/my-agent-skills.git /tmp/my-agent-skills
 
-#### CodeGraph
+# 2. Copy the skill you need
+cp -r /tmp/my-agent-skills/file-router ~/.codex/skills/file-router
 
-- 类型：MCP Server（附带使用指引）
-- 用途：给 AI Agent 提供代码知识图谱查询能力
-- GitHub：https://github.com/colbymchenry/codegraph
-- 一句话：把代码库变成可查询的图谱，减少 AI 探索成本 ~70%
+# 3. Remove the temporary clone
+rm -rf /tmp/my-agent-skills
+```
 
-## 目录结构
+Replace `file-router` with the skill directory you want.
+
+## Usage
+
+After installation, the target agent platform will load the skill automatically from `~/.codex/skills/<skill-name>/`. For example, in Claude Code the `file-router` skill guides the agent to route user files and generated outputs into a structured `./files/` workspace.
+
+## Project Structure
 
 ```text
 my-agent-skills/
 ├── README.md
-├── memory-router/
-├── file-router/
-├── python-style-skill/
-├── github-readme-style/
-├── critical-thinking/
-├── paper-review-prep/
-└── academic-writing-style/
+├── README.zh-CN.md
+├── VERSION
+├── LICENSE
+├── memory-router/            # Conversational memory routing
+├── file-router/              # File and output workspace routing
+├── python-style-skill/       # Python coding style for research code
+├── github-readme-style/      # README standardization conventions
+├── critical-thinking/        # Reasoning and disagreement guidelines
+├── paper-review-prep/        # Paper reading and presentation prep
+└── academic-writing-style/   # Academic writing style guide
 ```
 
-每个 Skill 目录内部通常包含 `README.md`、`README.zh-CN.md` 和 `SKILL.md`；涉及代码实现的 Skill（memory-router、file-router）还包括 `scripts/`、`tests/`、`references/` 等。
+## Versioning
 
-## 使用方式
+Current version: v0.1.0
 
-根据你使用的 Agent 平台，将对应 Skill 目录（或其中的 `SKILL.md`）加载到系统中即可。具体安装/加载方式取决于你使用的 Codex / Claude Code / 其他 Agent 环境。
+This project follows [Semantic Versioning](https://semver.org/). See [VERSION](VERSION) for the current version number.
+
+## Contributing
+
+Contributions are welcome. Please open an issue or pull request with a clear description of the change.
+
+## License
+
+This project is released under the MIT License. See [LICENSE](LICENSE) for details.
