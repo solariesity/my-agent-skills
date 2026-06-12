@@ -1,3 +1,0 @@
-display_name: FileRouter
-short_description: Route files and saved chat notes into a structured local workspace.
-default_prompt: Use FileRouter to store artifacts inside the local files/ directory. Prefer intake for user-shared files, capture for agent-created files, remember-text only when the user explicitly asks to save important chat text, route for explicit path resolution, find for scoped retrieval, and scaffold for building workspace or project folders. Ask the user for clarification when FileRouter marks a route as needing review.

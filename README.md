@@ -6,13 +6,13 @@
 
 | Skill | 目录 | 简介 |
 |-------|------|------|
-| **MemRouter** | [`MemRouter/`](MemRouter/) | 将对话记忆按类型、用户、项目、时间路由到确定性的 markdown 文件，支持决定、写入、回顾等能力。 |
-| **FileRouter** | [`FileRouter/`](FileRouter/) | 将用户分享、Agent 生成或聊天中明确的备忘文本，按域/项目/角色存储到结构化的 `./files/` 工作树。 |
-| **py-style-skill** | [`py-style-skill/`](py-style-skill/) | 针对研究和训练代码的 Python 风格清理约束：命名、注释、文件命名、稳定可解析的输出等。 |
+| **memory-router** | [`memory-router/`](memory-router/) | 将对话记忆按类型、用户、项目、时间路由到确定性的 markdown 文件，支持决定、写入、回顾等能力。 |
+| **file-router** | [`file-router/`](file-router/) | 将用户分享、Agent 生成或聊天中明确的备忘文本，按域/项目/角色存储到结构化的 `./files/` 工作树。 |
+| **python-style-skill** | [`python-style-skill/`](python-style-skill/) | 针对研究和训练代码的 Python 风格清理约束：命名、注释、文件命名、稳定可解析的输出等。 |
 | **github-readme-style** | [`github-readme-style/`](github-readme-style/) | 规范 GitHub 项目 README，默认输出中英双语，包含版本号、目录结构、安装使用等章节。 |
 | **critical-thinking** | [`critical-thinking/`](critical-thinking/) | 讨论、分析、判断类任务中的独立思考约束，强调基于事实判断并在必要时提出异议。 |
-| **paper-review** | [`paper-review/`](paper-review/) | 论文阅读、文献梳理和组会汇报准备，覆盖背景、方法、实验到汇报提纲整理。 |
-| **writing-style** | [`writing-style/`](writing-style/) | 学术写作和任务型文本生成，强调清楚、朴实、规范，避免过度修辞。 |
+| **paper-review-prep** | [`paper-review-prep/`](paper-review-prep/) | 论文阅读、文献梳理和组会汇报准备，覆盖背景、方法、实验到汇报提纲整理。 |
+| **academic-writing-style** | [`academic-writing-style/`](academic-writing-style/) | 学术写作和任务型文本生成，强调清楚、朴实、规范，避免过度修辞。 |
 
 ## 推荐的外部 Skills / MCP Servers
 
@@ -39,16 +39,16 @@
 ```text
 my-agent-skills/
 ├── README.md
-├── MemRouter/
-├── FileRouter/
-├── py-style-skill/
+├── memory-router/
+├── file-router/
+├── python-style-skill/
 ├── github-readme-style/
 ├── critical-thinking/
-├── paper-review/
-└── writing-style/
+├── paper-review-prep/
+└── academic-writing-style/
 ```
 
-每个 Skill 目录内部通常包含 `SKILL.md` 作为核心定义文件；涉及代码实现的 Skill（MemRouter、FileRouter）还包括 `scripts/`、`tests/`、`references/` 等。
+每个 Skill 目录内部通常包含 `README.md`、`README.zh-CN.md` 和 `SKILL.md`；涉及代码实现的 Skill（memory-router、file-router）还包括 `scripts/`、`tests/`、`references/` 等。
 
 ## 使用方式
 
