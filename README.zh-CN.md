@@ -44,13 +44,13 @@ my-agent-skills/
 ├── README.zh-CN.md
 ├── AGENTS.md                 # 本仓库的持久化约定
 ├── VERSION
+├── LICENSE
 ├── .gitignore
 ├── memory-router/            # 对话记忆路由
 ├── file-router/              # 文件和输出工作树路由
-├── python-style/       # 研究代码的 Python 风格约束
+├── python-style/             # 研究代码的 Python 风格约束
 ├── github-readme-style/      # README 规范化约定
 ├── critical-thinking/        # 独立思考与提出异议的约束
-
 ├── coursework-writing-style/   # 课程作业写作风格指南
 ├── clarify-first/            # 先澄清需求再行动
 ├── paper-analyst-zh/         # 英文学术论文中文翻译与深度分析
@@ -86,4 +86,4 @@ my-agent-skills/
 
 ## 许可证
 
-本项目基于 [MIT License](../LICENSE) 发布。
+本项目基于 [MIT License](LICENSE) 发布。

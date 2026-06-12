@@ -1,5 +1,7 @@
 # Paper Analyst ZH
 
+[中文](README.zh-CN.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 Translate and deeply analyze English computer science and engineering papers in Chinese. Also supports group meeting presentation preparation.

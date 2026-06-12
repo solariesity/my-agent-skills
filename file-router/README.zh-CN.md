@@ -150,6 +150,7 @@ file-router/
 ├── README.zh-CN.md
 ├── SKILL.md
 ├── VERSION
+├── .gitignore
 ├── agents/
 │   └── openai.yaml
 ├── references/

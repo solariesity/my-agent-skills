@@ -90,8 +90,4 @@ github-readme-style/
 
 ## 许可证
 
-许可证信息请参见[父仓库](../README.md)。
-
-## 许可证
-
 本项目基于 [MIT License](../LICENSE) 发布。

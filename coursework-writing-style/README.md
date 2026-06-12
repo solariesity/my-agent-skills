@@ -1,5 +1,7 @@
 # coursework-writing-style
 
+[中文](README.zh-CN.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Plain, clear coursework writing for student assignments and course papers.

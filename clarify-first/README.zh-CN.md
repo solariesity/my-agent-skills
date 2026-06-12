@@ -1,5 +1,7 @@
 # Clarify First
 
+[English](README.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 在需求不明确时，先问清楚再行动。

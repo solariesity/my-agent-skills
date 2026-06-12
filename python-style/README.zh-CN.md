@@ -74,7 +74,7 @@ python-style/
 
 ## 贡献
 
-欢迎提出建议或提交 PR。
+欢迎提交 issue 或 pull request。贡献指南请参考[父仓库 README](../README.md#contributing)。
 
 ## 许可证
 

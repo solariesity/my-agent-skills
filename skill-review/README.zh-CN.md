@@ -1,5 +1,7 @@
 # skill-review
 
+[English](README.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > 指导评审和改进 my-agent-skills monorepo 中的 skill。
@@ -56,6 +58,7 @@ skill-review/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
+├── .gitignore
 ├── SKILL.md
 └── agents/
     └── openai.yaml

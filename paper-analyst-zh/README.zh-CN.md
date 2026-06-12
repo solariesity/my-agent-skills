@@ -1,5 +1,7 @@
 # Paper Analyst ZH
 
+[English](README.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 把英文计算机与工程论文翻译成中文，并进行深度分析。同时支持组会汇报材料准备。

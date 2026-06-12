@@ -104,6 +104,11 @@ memory-router/
 │   ├── memrouter_cli.py
 │   └── memrouter_core.py
 └── tests/
+    ├── test_cli.py
+    ├── test_decide.py
+    ├── test_recall.py
+    ├── test_remember.py
+    └── test_routes.py
 ```
 
 - `SKILL.md` — 触发描述与 agent 集成时的使用指引。

@@ -1,5 +1,7 @@
 # File Router
 
+[中文](README.zh-CN.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Route user-shared files, agent-created artifacts, and explicitly saved chat notes into a structured `files/` tree inside the current working directory.

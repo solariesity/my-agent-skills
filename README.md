@@ -44,10 +44,11 @@ my-agent-skills/
 ├── README.zh-CN.md
 ├── AGENTS.md                 # Durable conventions for this repo
 ├── VERSION
+├── LICENSE
 ├── .gitignore
 ├── memory-router/            # Conversational memory routing
 ├── file-router/              # File and output workspace routing
-├── python-style/       # Python coding style for research code
+├── python-style/             # Python coding style for research code
 ├── github-readme-style/      # README standardization conventions
 ├── critical-thinking/        # Reasoning and disagreement guidelines
 
@@ -86,4 +87,4 @@ Contributions are welcome. Please open an issue or pull request with a clear des
 
 ## License
 
-This project is licensed under the [MIT License](../LICENSE).
+This project is licensed under the [MIT License](LICENSE).

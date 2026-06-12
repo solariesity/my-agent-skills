@@ -1,5 +1,7 @@
 # python-style
 
+[中文](README.zh-CN.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Behavior-preserving Python style cleanup for research and training code.

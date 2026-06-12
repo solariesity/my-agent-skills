@@ -90,4 +90,4 @@ Contributions are welcome. See the [parent repository README](../README.md#contr
 
 ## License
 
-See the [parent repository](../README.md) for license information.
+This project is licensed under the [MIT License](../LICENSE).

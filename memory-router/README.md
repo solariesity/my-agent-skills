@@ -1,5 +1,7 @@
 # Memory Router
 
+[中文](README.zh-CN.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Route conversational memory into deterministic markdown files instead of dumping everything into one flat log.

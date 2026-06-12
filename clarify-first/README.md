@@ -1,5 +1,7 @@
 # Clarify First
 
+[中文](README.zh-CN.md)
+
 [![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 Ask before acting when requirements are ambiguous.

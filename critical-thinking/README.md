@@ -54,6 +54,7 @@ critical-thinking/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
+├── .gitignore
 ├── SKILL.md
 └── agents/
     └── openai.yaml
