@@ -197,3 +197,7 @@ Contributions are welcome. See the [parent repository README](../README.md#contr
 - `scaffold`: create workspace or project skeletons
 
 See `SKILL.md` and `references/` for detailed workflow guidance.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).

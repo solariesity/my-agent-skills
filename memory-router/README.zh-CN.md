@@ -225,3 +225,7 @@ python -m unittest discover -s tests -v
 - 长期记忆和临时上下文要分开。
 - 路径要稳定、可预测。
 - 兜底行为要显式，不要靠隐式魔法。
+
+## 许可证
+
+本项目基于 [MIT License](../LICENSE) 发布。

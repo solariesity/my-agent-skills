@@ -83,3 +83,7 @@ my-agent-skills/
 ## 贡献
 
 欢迎提交 issue 或 pull request，请在描述中清楚说明改动内容。
+
+## 许可证
+
+本项目基于 [MIT License](../LICENSE) 发布。

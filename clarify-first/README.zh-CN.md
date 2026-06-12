@@ -79,3 +79,7 @@ clarify-first/
 ## 贡献
 
 欢迎提交 issue 或 pull request。贡献指南请参考[父仓库 README](../README.md#contributing)。
+
+## 许可证
+
+本项目基于 [MIT License](../LICENSE) 发布。

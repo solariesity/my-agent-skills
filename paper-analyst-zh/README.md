@@ -108,3 +108,7 @@ This skill is versioned together with the parent repository.
 ## Contributing
 
 Contributions are welcome. See the [parent repository README](../README.md#contributing) for guidelines.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).

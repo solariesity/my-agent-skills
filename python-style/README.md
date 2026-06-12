@@ -73,3 +73,7 @@ This is a pre-1.0 skill. Rules may evolve as more Python cleanup patterns are id
 ## Contributing
 
 Suggestions and pull requests are welcome.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).

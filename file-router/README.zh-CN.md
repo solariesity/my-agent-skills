@@ -199,3 +199,7 @@ python -m unittest discover -s tests -v
 - `scaffold`：创建工作区或项目骨架
 
 详细的工作流程指引见 `SKILL.md` 和 `references/`。
+
+## 许可证
+
+本项目基于 [MIT License](../LICENSE) 发布。

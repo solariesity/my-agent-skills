@@ -223,3 +223,7 @@ Contributions are welcome. See the [parent repository README](../README.md#contr
 - Separate long-term memory from temporary context.
 - Prefer stable naming and deterministic paths.
 - Keep fallback behavior explicit rather than magical.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).

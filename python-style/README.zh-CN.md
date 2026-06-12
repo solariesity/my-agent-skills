@@ -75,3 +75,7 @@ python-style/
 ## 贡献
 
 欢迎提出建议或提交 PR。
+
+## 许可证
+
+本项目基于 [MIT License](../LICENSE) 发布。

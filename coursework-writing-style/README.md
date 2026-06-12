@@ -75,3 +75,7 @@ This is a pre-1.0 skill. Rules may be refined as more coursework writing scenari
 ## Contributing
 
 Contributions are welcome. See the [parent repository README](../README.md#contributing) for guidelines.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).

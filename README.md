@@ -83,3 +83,7 @@ Skills and tools I find useful or worth referencing.
 ## Contributing
 
 Contributions are welcome. Please open an issue or pull request with a clear description of the change.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).

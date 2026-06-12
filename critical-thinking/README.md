@@ -71,3 +71,7 @@ This is a pre-1.0 skill. Guidelines may evolve as usage patterns become clearer.
 ## Contributing
 
 Contributions are welcome. See the [parent repository README](../README.md#contributing) for guidelines.
+
+## License
+
+This project is licensed under the [MIT License](../LICENSE).
