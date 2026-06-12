@@ -1,5 +1,7 @@
 # Paper Analyst ZH
 
+[![Version](https://img.shields.io/badge/version-v0.3.0-blue)](./VERSION)
+
 Translate and deeply analyze English computer science and engineering papers in Chinese. Also supports group meeting presentation preparation.
 
 ## Description
@@ -78,6 +80,8 @@ paper-analyst-zh/
 ├── SKILL.md              # Skill behavior and workflow
 ├── README.md             # English documentation
 ├── README.zh-CN.md       # Chinese documentation
+├── VERSION               # Current version
+├── .gitignore
 ├── agents/
 │   └── openai.yaml       # UI metadata (display name, default prompt)
 └── references/
@@ -86,7 +90,9 @@ paper-analyst-zh/
 
 ## Versioning
 
-This skill is versioned together with the parent repository. See the top-level [`VERSION`](../VERSION) file for the current version.
+Current version: [v0.3.0](VERSION).
+
+This skill is versioned together with the parent repository.
 
 ## Contributing
 

@@ -1,5 +1,7 @@
 # Paper Analyst ZH
 
+[![Version](https://img.shields.io/badge/version-v0.3.0-blue)](./VERSION)
+
 把英文计算机与工程论文翻译成中文，并进行深度分析。同时支持组会汇报材料准备。
 
 ## 简介
@@ -78,6 +80,8 @@ paper-analyst-zh/
 ├── SKILL.md              # Skill 行为与工作流
 ├── README.md             # 英文文档
 ├── README.zh-CN.md       # 中文文档
+├── VERSION               # 当前版本
+├── .gitignore
 ├── agents/
 │   └── openai.yaml       # UI 元数据（显示名、默认提示词）
 └── references/
@@ -86,7 +90,9 @@ paper-analyst-zh/
 
 ## 版本
 
-本 Skill 与父仓库统一版本管理。当前版本见顶层 [`VERSION`](../VERSION) 文件。
+当前版本：[v0.3.0](VERSION)。
+
+本 Skill 与父仓库统一版本管理。
 
 ## 贡献
 

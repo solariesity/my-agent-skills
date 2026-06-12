@@ -46,6 +46,7 @@ Use this checklist to keep the analysis rigorous and consistent.
 - What are the main headline numbers?
 - What is the absolute improvement?
 - What is the relative improvement?
+- **Δ vs SOTA**：What is the innovation delta relative to the strongest baseline? Is it transformative, meaningful, or marginal? On which metrics is Δ≈0?
 - Are gains consistent across datasets, metrics, or settings?
 - Are any results statistically fragile or suspiciously narrow?
 - Are there tradeoffs in speed, memory, cost, or complexity?
@@ -78,3 +79,12 @@ In the final answer, keep three layers distinct:
 - faithful translation
 - plain-language explanation
 - professional evaluation
+
+## 11. Adversarial review (博导审稿)
+
+- If the claimed novelty were removed, is the remainder still meaningful or just standard engineering?
+- Would the method hold on a different dataset distribution?
+- Are the baselines the strongest available? Any missing recent or stronger baselines?
+- Could a simpler approach (a trick, hyperparameter tuning, loss change) achieve similar results?
+- Is the improvement worth the added complexity or cost?
+- Does every claim in the paper have matching experimental evidence? Any claim-evidence gaps?
