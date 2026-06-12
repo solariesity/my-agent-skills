@@ -1,0 +1,4 @@
+interface:
+  display_name: "Coursework Writing Style"
+  short_description: "Help complete plain, clear coursework assignments and course papers."
+  default_prompt: "Use $coursework-writing-style to help me write this coursework assignment in a plain, clear, student-appropriate style."

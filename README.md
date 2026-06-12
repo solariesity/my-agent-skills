@@ -14,7 +14,7 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 - Bilingual documentation (`README.md` + `README.zh-CN.md`) for every skill
 - Deterministic routing for conversations, files, and generated outputs
 - Coding style guides for research and training code
-- Critical thinking, paper review, and academic writing helpers
+- Critical thinking, paper review, and coursework writing helpers
 
 ## My Skills
 
@@ -26,7 +26,7 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 | github-readme-style | [README](github-readme-style/README.md) | Standardize GitHub READMEs with bilingual docs, version info, and project structure. |
 | critical-thinking | [README](critical-thinking/README.md) | Independent judgment and critical thinking for substantive conversations. |
 | paper-review-prep | [README](paper-review-prep/README.md) | Systematic research paper analysis and presentation preparation. |
-| academic-writing-style | [README](academic-writing-style/README.md) | Plain, rigorous academic and task-oriented writing style. |
+| coursework-writing-style | [README](coursework-writing-style/README.md) | Plain, clear coursework writing for student assignments and course papers. |
 | clarify-first | [README](clarify-first/README.md) | Require explicit clarification before acting when requirements are ambiguous. |
 | paper-analyst-zh | [README](paper-analyst-zh/README.md) | Translate and deeply analyze English CS/engineering papers in Chinese. |
 
@@ -51,7 +51,7 @@ my-agent-skills/
 ├── github-readme-style/      # README standardization conventions
 ├── critical-thinking/        # Reasoning and disagreement guidelines
 ├── paper-review-prep/        # Paper reading and presentation prep
-├── academic-writing-style/   # Academic writing style guide
+├── coursework-writing-style/   # Coursework writing style guide
 ├── clarify-first/            # Clarify requirements before acting
 └── paper-analyst-zh/         # Translate and analyze papers in Chinese
 ```

@@ -14,7 +14,7 @@
 - 每个 Skill 提供中英双语文档（`README.md` + `README.zh-CN.md`）
 - 对对话、文件和生成输出进行确定性路由
 - 面向研究和训练代码的 Python 风格指南
-- 独立思考、论文阅读和学术写作辅助
+- 独立思考、论文阅读和课程作业写作辅助
 
 ## 我的 Skill
 
@@ -26,7 +26,7 @@
 | github-readme-style | [README](github-readme-style/README.md) | 规范 GitHub README，包含中英双语、版本号和目录结构。 |
 | critical-thinking | [README](critical-thinking/README.md) | 用于实质性对话的独立思考与批判性思维。 |
 | paper-review-prep | [README](paper-review-prep/README.md) | 系统性文献分析与组会汇报准备。 |
-| academic-writing-style | [README](academic-writing-style/README.md) | 朴实、严谨的学术与任务型写作风格。 |
+| coursework-writing-style | [README](coursework-writing-style/README.md) | 面向课程作业的学生写作风格：清楚、朴实、规范。 |
 | clarify-first | [README](clarify-first/README.md) | 在需求不明确时先澄清再行动。 |
 | paper-analyst-zh | [README](paper-analyst-zh/README.md) | 将英文计算机/工程论文翻译成中文并深度分析。 |
 
@@ -51,7 +51,7 @@ my-agent-skills/
 ├── github-readme-style/      # README 规范化约定
 ├── critical-thinking/        # 独立思考与提出异议的约束
 ├── paper-review-prep/        # 论文阅读和组会汇报准备
-├── academic-writing-style/   # 学术写作风格指南
+├── coursework-writing-style/   # 课程作业写作风格指南
 ├── clarify-first/            # 先澄清需求再行动
 └── paper-analyst-zh/         # 英文学术论文中文翻译与深度分析
 ```
