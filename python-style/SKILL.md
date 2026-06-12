@@ -12,6 +12,22 @@ Prefer this style in research and training codebases:
 - allow comments and docstrings to be mostly Chinese when the project allows it
 - keep training logs stable and easy to parse
 
+## 触发条件
+
+当用户说出以下关键词或类似表述时，自动应用此规范：
+- "审查/检查这个 Python 文件的风格"
+- "清理/规范这个脚本里的命名"
+- "让训练日志更容易解析" / "规范日志输出"
+- "改一下注释" / "整理 docstring"
+- "帮我统一一下代码风格"
+- 上下文明显指向 Python 研究/训练代码的风格清理
+
+**不适用场景**：
+- 涉及算法逻辑或业务规则变更的需求
+- 非 Python 代码（Rust、JavaScript、Shell 等）
+- 需要引入新依赖或重构架构的改动
+- 生产环境部署代码（本 skill 面向研究和训练代码）
+
 ## Default Assumptions
 
 - Prefer behavior-preserving cleanup unless the user explicitly asks to change logic.
@@ -152,3 +168,4 @@ When applying this skill:
 - Are public functions documented just enough to be understood later?
 - Are logs stable enough for downstream scripts to parse, including key order, missing values, and numeric formatting?
 - Are debug prints clearly marked and easy to disable?
+- Is any logic or pattern repeated across multiple places that could be extracted into a single helper? (DRY: Don't Repeat Yourself — prefer one clear implementation over copy-pasted variations.)

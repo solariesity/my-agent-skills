@@ -1,6 +1,6 @@
 # python-style
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
 
 > Behavior-preserving Python style cleanup for research and training code.
 
@@ -29,6 +29,7 @@ mkdir -p ~/.claude/skills/python-style
 
 # 3. Copy the working parts of the skill
 cp /tmp/my-agent-skills/python-style/SKILL.md ~/.claude/skills/python-style/
+cp -r /tmp/my-agent-skills/python-style/agents ~/.claude/skills/python-style/
 ```
 
 ```bash
@@ -55,14 +56,17 @@ python-style/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
-└── SKILL.md
+├── .gitignore
+├── SKILL.md
+└── agents/
+    └── openai.yaml
 ```
 
 - `SKILL.md` — Core behavior specification and style rules.
 
 ## Versioning
 
-Current version: [v0.1.0](VERSION).
+Current version: [v0.2.0](VERSION).
 
 This is a pre-1.0 skill. Rules may evolve as more Python cleanup patterns are identified.
 

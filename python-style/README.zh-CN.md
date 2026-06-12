@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
 
 > 面向研究和训练代码的行为保持型 Python 风格清理 skill。
 
@@ -31,6 +31,7 @@ mkdir -p ~/.claude/skills/python-style
 
 # 3. 复制 Skill 的有效文件
 cp /tmp/my-agent-skills/python-style/SKILL.md ~/.claude/skills/python-style/
+cp -r /tmp/my-agent-skills/python-style/agents ~/.claude/skills/python-style/
 ```
 
 ```bash
@@ -57,14 +58,17 @@ python-style/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
-└── SKILL.md
+├── .gitignore
+├── SKILL.md
+└── agents/
+    └── openai.yaml
 ```
 
 - `SKILL.md` — 核心行为定义与风格规则。
 
 ## 版本说明
 
-当前版本：[v0.1.0](VERSION)。
+当前版本：[v0.2.0](VERSION)。
 
 这是 1.0 之前的 skill，规则可能会随着更多 Python 清理模式的发现而演进。
 
