@@ -45,17 +45,17 @@ python scripts/memrouter_cli.py --help
 git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
 
 # 2. 只复制 skill 运行所需的核心文件到目标位置
-mkdir -p ~/.claude/skills/MemRouter
-cp -r /tmp/my-agent-skills/MemRouter/SKILL.md ~/.claude/skills/MemRouter/
-cp -r /tmp/my-agent-skills/MemRouter/agents ~/.claude/skills/MemRouter/
-cp -r /tmp/my-agent-skills/MemRouter/references ~/.claude/skills/MemRouter/
-cp -r /tmp/my-agent-skills/MemRouter/scripts ~/.claude/skills/MemRouter/
+mkdir -p ~/.codex/skills/MemRouter
+cp -r /tmp/my-agent-skills/MemRouter/SKILL.md ~/.codex/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/agents ~/.codex/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/references ~/.codex/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/scripts ~/.codex/skills/MemRouter/
 
 # 3. 删除临时目录
 rm -rf /tmp/my-agent-skills
 ```
 
-Windows 上对应路径是 `C:\Users\<用户名>\.claude\skills\MemRouter\`。
+Windows 上对应路径是 `C:\Users\<用户名>\.codex\skills\MemRouter\`。
 
 ## 使用方式
 

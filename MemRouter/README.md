@@ -43,17 +43,17 @@ If you only want to install MemRouter as a skill in an agent environment (withou
 git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
 
 # 2. Copy only the core skill files to the target location
-mkdir -p ~/.claude/skills/MemRouter
-cp -r /tmp/my-agent-skills/MemRouter/SKILL.md ~/.claude/skills/MemRouter/
-cp -r /tmp/my-agent-skills/MemRouter/agents ~/.claude/skills/MemRouter/
-cp -r /tmp/my-agent-skills/MemRouter/references ~/.claude/skills/MemRouter/
-cp -r /tmp/my-agent-skills/MemRouter/scripts ~/.claude/skills/MemRouter/
+mkdir -p ~/.codex/skills/MemRouter
+cp -r /tmp/my-agent-skills/MemRouter/SKILL.md ~/.codex/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/agents ~/.codex/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/references ~/.codex/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/scripts ~/.codex/skills/MemRouter/
 
 # 3. Remove the temporary directory
 rm -rf /tmp/my-agent-skills
 ```
 
-On Windows, use `C:\Users\<username>\.claude\skills\MemRouter\` as the target path.
+On Windows, use `C:\Users\<username>\.codex\skills\MemRouter\` as the target path.
 
 ## Usage
 
