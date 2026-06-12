@@ -1,5 +1,7 @@
 # critical-thinking
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > Independent judgment and critical thinking for substantive conversations.
 
 Use this skill when the assistant needs to express opinions, evaluate claims, or discuss ideas with the user. It defines an intellectual stance: have independent judgment, argue based on facts, and disagree when appropriate.
@@ -49,6 +51,7 @@ Load `SKILL.md` into your agent environment. The skill applies automatically in 
 critical-thinking/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -56,7 +59,7 @@ critical-thinking/
 
 ## Versioning
 
-Current version: `v0.1.0`.
+Current version: [v0.1.0](VERSION).
 
 This is a pre-1.0 skill. Guidelines may evolve as usage patterns become clearer.
 

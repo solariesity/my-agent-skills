@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > 主见与批判性思维，用于需要讨论、判断、分析的对话场景。
 
 此 skill 用于 Agent 需要表达观点、评估主张或与用户讨论想法的场景。它定义了一种立场：有独立判断、基于事实论证、并在适当时提出异议。
@@ -51,6 +53,7 @@ Windows 上对应路径是 `C:\Users\<用户名>\.codex\skills\critical-thinking
 critical-thinking/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -58,7 +61,7 @@ critical-thinking/
 
 ## 版本说明
 
-当前版本：`v0.1.0`。
+当前版本：[v0.1.0](VERSION)。
 
 这是 1.0 之前的 skill，指引可能会随着使用模式的清晰而继续演进。
 

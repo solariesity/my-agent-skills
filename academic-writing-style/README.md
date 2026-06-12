@@ -1,5 +1,7 @@
 # academic-writing-style
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > Plain, rigorous academic and task-oriented writing style.
 
 Use this skill when writing academic-style or task-style content such as homework, assignments, reports, essays, or any written work that resembles a student submission. It produces clear, plain, and well-structured text without flashiness.
@@ -49,6 +51,7 @@ Load `SKILL.md` into your agent environment. The skill triggers automatically wh
 academic-writing-style/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -56,7 +59,7 @@ academic-writing-style/
 
 ## Versioning
 
-Current version: `v0.1.0`.
+Current version: [v0.1.0](VERSION).
 
 This is a pre-1.0 skill. Style rules may be refined as more writing scenarios are covered.
 

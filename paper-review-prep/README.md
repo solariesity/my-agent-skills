@@ -1,5 +1,7 @@
 # paper-review-prep
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > Systematic research paper analysis and presentation preparation.
 
 Use this skill when preparing for a group meeting or presentation by analyzing a research paper. Typical triggers include: "review this paper", "prepare a literature summary", "group meeting prep", or similar academic paper review tasks.
@@ -49,6 +51,7 @@ Load `SKILL.md` into your agent environment. The skill triggers automatically wh
 paper-review-prep/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -56,7 +59,7 @@ paper-review-prep/
 
 ## Versioning
 
-Current version: `v0.1.0`.
+Current version: [v0.1.0](VERSION).
 
 This is a pre-1.0 skill. The workflow may evolve based on different meeting and presentation styles.
 

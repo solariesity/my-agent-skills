@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > 面向研究和训练代码的行为保持型 Python 风格清理 skill。
 
 当需要审查或规范化 Python 命名、模块或文件名、中文优先的注释与 docstring，以及稳定可解析的训练或调试输出时，使用此 skill。它会尽量在不影响外部契约的前提下完成清理。
@@ -57,6 +59,7 @@ Windows 上对应路径是 `C:\Users\<用户名>\.codex\skills\python-style-skil
 python-style-skill/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -64,7 +67,7 @@ python-style-skill/
 
 ## 版本说明
 
-当前版本：`v0.1.0`。
+当前版本：[v0.1.0](VERSION)。
 
 这是 1.0 之前的 skill，规则可能会随着更多 Python 清理模式的发现而演进。
 

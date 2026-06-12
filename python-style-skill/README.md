@@ -1,5 +1,7 @@
 # python-style-skill
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > Behavior-preserving Python style cleanup for research and training code.
 
 Use this skill when reviewing or standardizing Python naming, module or file names, Chinese-first comments or docstrings, and stable parseable training or debug output without breaking external contracts.
@@ -55,6 +57,7 @@ Typical prompts:
 python-style-skill/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -62,7 +65,7 @@ python-style-skill/
 
 ## Versioning
 
-Current version: `v0.1.0`.
+Current version: [v0.1.0](VERSION).
 
 This is a pre-1.0 skill. Rules may evolve as more Python cleanup patterns are identified.
 

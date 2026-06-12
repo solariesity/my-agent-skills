@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > 朴实、严谨的学术与任务型写作风格。
 
 此 skill 用于学术写作和任务型文本生成，例如作业、报告、课程论文等。它强调语言表达清楚、朴实、规范，避免过度修辞或不必要的“包装感”。
@@ -51,6 +53,7 @@ Windows 上对应路径是 `C:\Users\<用户名>\.codex\skills\academic-writing-
 academic-writing-style/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -58,7 +61,7 @@ academic-writing-style/
 
 ## 版本说明
 
-当前版本：`v0.1.0`。
+当前版本：[v0.1.0](VERSION)。
 
 这是 1.0 之前的 skill，风格规则可能会随着更多写作场景的加入而细化。
 

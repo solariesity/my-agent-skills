@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.5.0-blue)](./VERSION_RECORDS.md)
+[![Version](https://img.shields.io/badge/version-v0.5.0-blue)](./VERSION)
 
 > 将对话记忆路由到确定性的 Markdown 文件，而不是全部丢进一个平铺的日志里。
 
@@ -38,7 +38,7 @@ python scripts/memrouter_cli.py --help
 
 ### 仅安装 Skill 部分
 
-如果你只想把 memory-router 当作 skill 安装到 Agent 环境（不需要 `README`、`tests`、`VERSION_RECORDS.md` 等项目维护文件），可以使用临时克隆的方式：
+如果你只想把 memory-router 当作 skill 安装到 Agent 环境（不需要 `README`、`tests`、`VERSION` 等项目维护文件），可以使用临时克隆的方式：
 
 ```bash
 # 1. 克隆集合仓库到临时目录
@@ -103,6 +103,7 @@ python scripts/memrouter_cli.py recall \
 memory-router/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 ├── SKILL.md
 ├── VERSION_RECORDS.md
 ├── agents/
@@ -193,7 +194,7 @@ memory-router 按以下四个维度路由记忆：
 
 ## 版本说明
 
-当前版本：`v0.5.0`。
+当前版本：[v0.5.0](VERSION)。
 
 memory-router 在精神上遵循语义化版本。`v0.5.0` 表示路由模型、写入语义、recall 边界和启发式决策层已经稳定到可以认真使用，但决策质量和 recall 质量在达到 `1.0.0` 之前仍有提升空间。
 

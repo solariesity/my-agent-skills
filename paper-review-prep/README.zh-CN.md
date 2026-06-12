@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 > 系统性文献分析与组会汇报准备。
 
 此 skill 用于为组会或学术汇报准备文献分析。典型触发语包括："帮我梳理一篇文献"、"组会准备"、"文献分析"、"帮我读一篇论文"、"论文汇报准备"等。
@@ -51,6 +53,7 @@ Windows 上对应路径是 `C:\Users\<用户名>\.codex\skills\paper-review-prep
 paper-review-prep/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 └── SKILL.md
 ```
 
@@ -58,7 +61,7 @@ paper-review-prep/
 
 ## 版本说明
 
-当前版本：`v0.1.0`。
+当前版本：[v0.1.0](VERSION)。
 
 这是 1.0 之前的 skill，工作流程可能会根据不同的会议和汇报风格继续演进。
 

@@ -1,6 +1,6 @@
 # Memory Router
 
-[![Version](https://img.shields.io/badge/version-v0.5.0-blue)](./VERSION_RECORDS.md)
+[![Version](https://img.shields.io/badge/version-v0.5.0-blue)](./VERSION)
 
 > Route conversational memory into deterministic markdown files instead of dumping everything into one flat log.
 
@@ -36,7 +36,7 @@ For convenience, you can add the `scripts/` directory to your `PATH` or create a
 
 ### Install Only the Skill
 
-If you only want to install memory-router as a skill in an agent environment (without project-maintenance files like `README`, `tests`, or `VERSION_RECORDS.md`), use a temporary clone:
+If you only want to install memory-router as a skill in an agent environment (without project-maintenance files like `README`, `tests`, or `VERSION`), use a temporary clone:
 
 ```bash
 # 1. Clone the monorepo to a temporary directory
@@ -101,6 +101,7 @@ python scripts/memrouter_cli.py recall \
 memory-router/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 ├── SKILL.md
 ├── VERSION_RECORDS.md
 ├── agents/
@@ -191,7 +192,7 @@ Recall is currently line-match based rather than semantic ranking based.
 
 ## Versioning
 
-Current version: `v0.5.0`.
+Current version: [v0.5.0](VERSION).
 
 memory-router follows semantic versioning in spirit. `v0.5.0` means the routing model, write semantics, recall boundaries, and heuristic decision layer are stable enough for real use, but decision quality and recall quality still have room to improve before a `1.0.0` release.
 

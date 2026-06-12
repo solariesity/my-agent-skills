@@ -1,5 +1,7 @@
 # GitHub README Style
 
+[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+
 A Codex / Claude Code skill for standardizing GitHub READMEs.
 
 ## What it does
@@ -26,6 +28,7 @@ Both files follow the same logical structure and cover the same content.
 ```text
 github-readme-style/
 ├── README.md
+├── VERSION
 ├── SKILL.md
 └── agents/
     └── openai.yaml
@@ -40,3 +43,7 @@ Load this skill in your agent environment and ask it to:
 - "Add a Chinese README"
 
 The skill will use `SKILL.md` as the behavior specification.
+
+## Versioning
+
+Current version: [v0.1.0](VERSION).
