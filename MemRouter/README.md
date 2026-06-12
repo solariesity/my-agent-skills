@@ -19,11 +19,11 @@ MemRouter is a skill and local tooling layer for AI agents that need structured,
 
 MemRouter requires Python 3.10 or newer.
 
-Clone the repository:
+This skill lives inside the [`my-agent-skills`](https://github.com/solariesity/my-agent-skills) monorepo. Clone that repository and enter the MemRouter directory:
 
 ```bash
-git clone https://github.com/solariesity/MemRouter.git
-cd MemRouter
+git clone https://github.com/solariesity/my-agent-skills.git
+cd my-agent-skills/MemRouter
 ```
 
 No package installation is required for CLI usage. Run commands directly from the `scripts/` directory:
