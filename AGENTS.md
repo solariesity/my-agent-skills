@@ -9,14 +9,15 @@ When creating or importing a new skill into this monorepo:
 1. Place the skill in its own directory at the repository root.
 2. Ensure the skill has a valid `SKILL.md` with YAML frontmatter (`name`, `description`).
 3. Create or update `agents/openai.yaml` with UI metadata.
-4. Create bilingual READMEs:
+4. Create `VERSION` and `VERSION_RECORDS.md` for the skill.
+5. Create bilingual READMEs:
    - `README.md` in English
    - `README.zh-CN.md` in Simplified Chinese
-5. Add a standardized `.gitignore` to the skill directory (copy from an existing skill).
-6. **Update the root `README.md` and `README.zh-CN.md`:**
+6. Add a standardized `.gitignore` to the skill directory (copy from an existing skill).
+7. **Update the root `README.md` and `README.zh-CN.md`:**
    - Add the skill to the **My Skills** table.
    - Add the skill to the **Project Structure** directory tree.
-7. If the skill has working subdirectories (`agents/`, `references/`, `scripts/`, `assets/`), document them in the skill's README installation and project structure sections.
+8. If the skill has working subdirectories (`agents/`, `references/`, `scripts/`, `assets/`), document them in the skill's README installation and project structure sections.
 
 ## Installation instructions in skill READMEs
 
@@ -65,26 +66,34 @@ Keep paragraphs short and use code blocks with language tags.
 - The root `.gitignore` excludes `.claude/`, `.codex/`, temporary directories, and common generated files.
 - Each skill directory has its own `.gitignore` using the same standard template.
 - Do not commit agent-local state (`.claude/`, `.codex/`) or temporary files.
+- Whenever a root or skill `VERSION` file is updated, create a git commit for that version update. Do not leave a version bump uncommitted.
 
 ## Versioning
 
-- The repository has a single top-level `VERSION` file that represents the monorepo as a whole.
-- Each skill may also have its own `VERSION` file. If a skill has a `VERSION` file, its README version badge should point to it.
+- The repository has a single top-level `VERSION` file and a top-level `VERSION_RECORDS.md`.
+- Each skill must also have its own `VERSION` file and `VERSION_RECORDS.md`.
+- `VERSION` stores only the current version number.
+- `VERSION_RECORDS.md` records:
+  - what the current version changed
+  - what the next planned version is
+- When bumping a version, update the matching `VERSION`, `VERSION_RECORDS.md`, and any related README badges or version text together.
+- A version bump must end with a git commit that includes the versioned content changes and the matching version metadata updates.
 - The user is responsible for version bumps:
   - When modifying a skill, the user decides whether to update that skill's `VERSION`.
   - The user personally updates the root `VERSION` for major repository-wide changes.
-- Keep badge versions in skill READMEs in sync with their corresponding `VERSION` file.
+- Keep badge versions in READMEs in sync with their corresponding `VERSION` file.
 
 ### When modifying the repository
 
 Whenever you make changes to this repository (skill content, READMEs, structure, conventions, etc.):
 
-1. Read the relevant `VERSION` file(s):
-   - The root `VERSION` for repository-level changes.
-   - The skill's `VERSION` if you are modifying a skill that has one.
+1. Read the relevant version files:
+   - The root `VERSION` and `VERSION_RECORDS.md` for repository-level changes.
+   - The skill's `VERSION` and `VERSION_RECORDS.md` if you are modifying a skill.
 2. Report the current version number(s) to the user.
 3. Ask whether they want to bump any version.
-4. Only update version files and badges if the user explicitly confirms.
+4. Only update `VERSION`, `VERSION_RECORDS.md`, and related README badges/version text if the user explicitly confirms.
+5. If a version was updated, create a git commit for that version change before finishing the task.
 
 ## This file will evolve
 

@@ -4,25 +4,35 @@ This file tracks memory-router versions, what each version introduced, and the r
 
 ## Current Version
 
-### v0.5.0
+### v1.0.0
 
 Current stable baseline.
 
 **Added / Changed:**
 
-- First-use legacy-memory migration rules for existing flat memory files.
-- Cleaner legacy `MEMORY.md` handoff model.
-- Clearer single-source-of-truth guidance for memory-router adoption.
-- Routing model, write semantics, recall boundaries, and heuristic decision layer are stable enough for real use.
+- Established deterministic routing for structured conversational memory files.
+- Added practical bilingual heuristics for trivial-chat filtering, preference detection, task detection, and topic inference.
+- Defined write, recall, and routing boundaries for user, project, type, and time scopes.
+- Packaged the skill for Codex / Claude Code installation with bilingual docs, agent metadata, scripts, and references.
 
 **Known limits:**
 
-- Decision layer is heuristic-first, not model-assisted.
-- Recall is line-match based, without ranking or summarization.
-- Topic inference is useful but narrow.
-- Bilingual support is practical for common cases but still rule-based.
+- Decision behavior is still heuristic-first rather than model-assisted.
+- Recall remains relatively simple compared with ranked or synthesized retrieval.
+- Topic inference is practical but still rule-based.
 
 ## Previous Versions
+
+### v0.5.0
+
+Earlier stable pre-`v1.0.0` baseline.
+
+**Included:**
+
+- First-use legacy-memory migration rules for existing flat memory files.
+- Cleaner legacy `MEMORY.md` handoff model.
+- Clearer single-source-of-truth guidance for memory-router adoption.
+- Routing model, write semantics, recall boundaries, and heuristic decision layer stable enough for real use.
 
 ### v0.3.0
 
@@ -45,7 +55,7 @@ First reasonably stable bilingual-and-timestamped baseline for the current archi
 
 ## Roadmap
 
-### v0.6.0
+### v1.0.1
 
 Possible focus:
 
@@ -53,12 +63,3 @@ Possible focus:
 - Deterministic validation and routing guardrails after model output.
 - Improved recall output from raw lines to grouped entries.
 - Expanded tests for ambiguous classification and mixed-language cases.
-
-### v1.0.0
-
-Only consider when:
-
-- Decision behavior is stable across realistic usage.
-- Recall output is meaningfully more helpful than plain text matching.
-- Packaging and docs are polished enough for wider reuse.
-- Major routing and memory semantics are unlikely to change.
