@@ -68,10 +68,21 @@ For group meeting preparation, use natural Chinese:
 帮我梳理这篇论文，准备组会汇报。
 ```
 
+### Reading Modes
+
+The skill supports four reading modes. Specify your goal and the skill adapts the analysis depth accordingly:
+
+| Mode | Use Case | Translation | Analysis Focus |
+|------|----------|:-----------:|----------------|
+| **Quick** | Decide if a paper is worth reading | Full | Shortened analysis: snapshot + key takeaways only |
+| **Detailed** (default) | Thoroughly understand a paper | Full | All 9 layers: snapshot, translation, plain explanation, formal expression, professional analysis, presentation outline, personal inspiration, limitations, glossary |
+| **Report Prep** | Prepare a group meeting presentation | Full | Contributions, Δ vs SOTA, audience questions, detailed outline with speaking notes and time allocation, personal inspiration |
+| **Reproduction Prep** | Reproduce the paper's results | Full | Implementation details, missing settings, experimental risks, reproducibility blockers |
+
 When given a local PDF, the skill will first extract its content and then generate:
 
 - `paper.translation.zh.md` — full Chinese translation.
-- `paper.analysis.zh.md` — snapshot, plain explanation, formal academic expression, professional analysis, presentation outline (when applicable), and glossary.
+- `paper.analysis.zh.md` — snapshot, plain explanation, formal academic expression, professional analysis, presentation outline (when applicable), personal inspiration, limitations, and glossary.
 
 ## Project Structure
 
