@@ -80,6 +80,22 @@ A standard README should include the following sections in this order. Skip a se
 - Keep version consistency between README, `VERSION` file, and package metadata.
 - For pre-1.0 projects, explicitly state that the API or behavior may still change.
 
+## Version Records (`VERSION_RECORDS.md`)
+
+For projects that maintain a hand-written changelog or roadmap, use `VERSION_RECORDS.md` with the following structure:
+
+1. **Current Version** — The latest released or stable version, with a short summary of what it includes and its known limits.
+2. **Previous Versions** — Past milestones in descending order, each with what it introduced.
+3. **Roadmap** — Planned future versions and the conditions or features that would trigger them.
+
+### Version Records Style Rules
+
+- Keep one version per subsection.
+- Use bullet lists for changes, limits, and roadmap items.
+- Keep the current version in sync with the README badge and any `VERSION` file.
+- Do not let the file become a duplicate of Git commit history; focus on user-facing or maintainer-facing milestones.
+- If the file is referenced from the README, make sure it is tracked by Git and not ignored.
+
 ## Directory Structure Section
 
 When including a directory tree:
