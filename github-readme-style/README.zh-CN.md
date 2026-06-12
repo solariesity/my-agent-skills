@@ -1,6 +1,8 @@
 # GitHub README Style
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[English](README.md)
+
+[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](./VERSION)
 
 一个用于规范化 GitHub README 的 Codex / Claude Code Skill。
 
@@ -78,7 +80,7 @@ github-readme-style/
 
 ## 版本
 
-当前版本：[v0.1.0](VERSION)。
+当前版本：[v0.1.1](VERSION)。
 
 本 Skill 遵循 [Semantic Versioning](https://semver.org/)。`VERSION` 文件是版本号的唯一来源。
 

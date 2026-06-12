@@ -1,5 +1,4 @@
-name: github-readme-style
-version: 0.1.0
-description: Enforce a consistent, bilingual GitHub README structure for general projects.
-instructions: ./SKILL.md
-tools: []
+interface:
+  display_name: "GitHub README Style"
+  short_description: "Enforce a consistent, bilingual GitHub README structure."
+  default_prompt: "Use $github-readme-style to write, review, or standardize a bilingual GitHub README for this project."
