@@ -62,6 +62,7 @@ Skills and tools I find useful or worth referencing.
 
 | Skill | Repository | Introduction |
 |-------|------------|--------------|
+| ljg-skills | https://github.com/lijigang/ljg-skills | A personal collection of AI agent skills. |
 | andrej-karpathy-skills | https://github.com/duolahypercho/andrej-karpathy-skills | A Codex skill that packages Andrej Karpathy-style coding practices—think first, keep it simple, only make necessary changes, and finish with verifiable goals—to improve the stability and controllability of daily coding agents. |
 
 ### MCP Servers
