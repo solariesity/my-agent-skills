@@ -34,6 +34,27 @@ python scripts/memrouter_cli.py --help
 
 For convenience, you can add the `scripts/` directory to your `PATH` or create a shell alias.
 
+### Install Only the Skill
+
+If you only want to install MemRouter as a skill in an agent environment (without project-maintenance files like `README`, `tests`, or `VERSION_RECORDS.md`), use a temporary clone:
+
+```bash
+# 1. Clone the monorepo to a temporary directory
+git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
+
+# 2. Copy only the core skill files to the target location
+mkdir -p ~/.claude/skills/MemRouter
+cp -r /tmp/my-agent-skills/MemRouter/SKILL.md ~/.claude/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/agents ~/.claude/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/references ~/.claude/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/scripts ~/.claude/skills/MemRouter/
+
+# 3. Remove the temporary directory
+rm -rf /tmp/my-agent-skills
+```
+
+On Windows, use `C:\Users\<username>\.claude\skills\MemRouter\` as the target path.
+
 ## Usage
 
 Inspect where a preference would be routed:
@@ -81,7 +102,6 @@ MemRouter/
 ├── README.md
 ├── README.zh-CN.md
 ├── SKILL.md
-├── RELEASE_GUIDE.md
 ├── VERSION_RECORDS.md
 ├── agents/
 │   └── openai.yaml
@@ -205,7 +225,7 @@ Current coverage includes:
 
 ## Contributing
 
-Suggestions and pull requests are welcome. For release packaging guidance, see [RELEASE_GUIDE.md](RELEASE_GUIDE.md).
+Suggestions and pull requests are welcome.
 
 ## Design Principles
 

@@ -36,6 +36,27 @@ python scripts/memrouter_cli.py --help
 
 为了方便，你可以把 `scripts/` 目录加到 `PATH`，或者创建一个 shell 别名。
 
+### 仅安装 Skill 部分
+
+如果你只想把 MemRouter 当作 skill 安装到 Agent 环境（不需要 `README`、`tests`、`VERSION_RECORDS.md` 等项目维护文件），可以使用临时克隆的方式：
+
+```bash
+# 1. 克隆集合仓库到临时目录
+git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
+
+# 2. 只复制 skill 运行所需的核心文件到目标位置
+mkdir -p ~/.claude/skills/MemRouter
+cp -r /tmp/my-agent-skills/MemRouter/SKILL.md ~/.claude/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/agents ~/.claude/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/references ~/.claude/skills/MemRouter/
+cp -r /tmp/my-agent-skills/MemRouter/scripts ~/.claude/skills/MemRouter/
+
+# 3. 删除临时目录
+rm -rf /tmp/my-agent-skills
+```
+
+Windows 上对应路径是 `C:\Users\<用户名>\.claude\skills\MemRouter\`。
+
 ## 使用方式
 
 查看一条偏好记忆会被路由到哪里：
@@ -83,7 +104,6 @@ MemRouter/
 ├── README.md
 ├── README.zh-CN.md
 ├── SKILL.md
-├── RELEASE_GUIDE.md
 ├── VERSION_RECORDS.md
 ├── agents/
 │   └── openai.yaml
@@ -207,7 +227,7 @@ python -m unittest discover -s tests -v
 
 ## 贡献
 
-欢迎提出建议或提交 PR。发布打包指引见 [RELEASE_GUIDE.md](RELEASE_GUIDE.md)。
+欢迎提出建议或提交 PR。
 
 ## 设计原则
 
