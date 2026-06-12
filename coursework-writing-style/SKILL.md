@@ -149,6 +149,5 @@ description: >
 
 ## 与其它 skill 的关系
 
-- 如需系统性分析单篇论文用于组会汇报，使用 `$paper-review-prep`。
-- 如需翻译和分析英文学术论文，使用 `$paper-analyst-zh`。
+- 如需翻译、分析英文学术论文或准备组会汇报，使用 `$paper-analyst-zh`。
 - 如需撰写可发表的学术论文，应使用专门的论文写作 skill，而不是本 skill。

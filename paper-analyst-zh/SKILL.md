@@ -1,15 +1,24 @@
 ---
 name: paper-analyst-zh
-description: "Translate and deeply analyze English computer science and engineering papers in Chinese. Use when the user is a Chinese reader and wants an English paper, preprint, or PDF explained in Chinese with: (1) faithful translation, (2) plain-language explanation for non-specialists, and (3) professional full-text analysis of methods, experiments, results, strengths, weaknesses, and reproduction value. When the source is a PDF file, PDF attachment, or .pdf path, first invoke the pdf skill or an equivalent PDF-reading workflow automatically before analysis."
+description: "Translate and deeply analyze English computer science and engineering papers in Chinese. Use when the user is a Chinese reader and wants an English paper, preprint, or PDF explained in Chinese with: (1) faithful translation, (2) plain-language explanation for non-specialists, (3) formal academic expression, (4) professional full-text analysis of methods, experiments, results, strengths, weaknesses, and reproduction value, and (5) a presentation outline for group meetings. Typical triggers include: 组会, 组会准备, 文献汇报, 帮我梳理这篇文献, 论文汇报, 文献阅读, 帮我读一篇论文, 论文汇报准备, 翻译这篇论文, 分析这篇论文. When the source is a PDF file, PDF attachment, or .pdf path, first invoke the pdf skill or an equivalent PDF-reading workflow automatically before analysis."
 ---
 
 # Paper Analyst Zh
 
 ## Overview
 
-Read an English CS or engineering paper, preserve technical accuracy, and explain it in layered Chinese for different audiences.
+Read an English CS or engineering paper, preserve technical accuracy, and explain it in layered Chinese for different audiences. Also suitable for preparing group meeting presentations and literature review reports.
 
 Use a workflow-based structure. Keep terminology precise, avoid hallucinating missing details, and separate direct translation from interpretation.
+
+## 触发条件
+
+当用户说出以下关键词或类似表述时，自动应用此规范：
+- "组会" / "组会准备" / "文献汇报"
+- "帮我梳理/分析这篇文献/论文"
+- "论文汇报" / "文献阅读" / "论文汇报准备"
+- "翻译这篇论文" / "分析这篇论文" / "帮我读一篇论文"
+- 上下文明显指向论文阅读、分析或汇报准备
 
 ## Workflow
 
@@ -57,15 +66,17 @@ Unless the user asks for a different format, produce the answer in this order:
 1. Paper snapshot
 2. Full Chinese translation
 3. Plain-language explanation
-4. Professional deep analysis
-5. Key takeaways and limitations
-6. Terminology glossary
+4. Formal academic expression
+5. Professional deep analysis
+6. Presentation outline (when preparing for group meetings or report prep mode)
+7. Key takeaways and limitations
+8. Terminology glossary
 
 Keep translation and interpretation separate. Do not mix your opinions into the translation section.
 
 The default deliverable is two Markdown files, not one mixed response:
 - one file for the full Chinese translation only
-- one file for all non-translation content, including the snapshot, plain-language explanation, professional analysis, experiment analysis, limitations, and glossary
+- one file for all non-translation content, including the snapshot, plain-language explanation, formal academic expression, professional analysis, presentation outline, experiment analysis, limitations, and glossary
 
 If the user does not explicitly opt out, write both files to disk.
 
@@ -88,7 +99,7 @@ Location rules:
 
 Content rules:
 - The translation file must contain translation only, plus minimal structural metadata such as the title and section headings.
-- The analysis file must not repeat the full translation. It should contain the snapshot, plain-language explanation, professional analysis, experiment analysis, limitations, and glossary.
+- The analysis file must not repeat the full translation. It should contain the snapshot, plain-language explanation, formal academic expression, professional analysis, presentation outline (when applicable), experiment analysis, limitations, and glossary.
 - In the chat response, briefly report the output paths and a short summary, rather than pasting the full translation unless the user explicitly asks for it inline.
 
 ### 3. Write the paper snapshot first
@@ -134,7 +145,20 @@ Prefer:
 
 Avoid dense jargon. When jargon is necessary, explain it with a short analogy or plain paraphrase.
 
-### 6. Write the professional deep analysis
+### 6. Write the formal academic expression (规范学术表述)
+
+After the plain-language explanation, provide a formal academic restatement of the paper's methods and conclusions in polished Chinese.
+
+This section is neither a faithful translation (which follows the original structure) nor a professional critique (which evaluates and questions). It presents the paper's contributions in formal academic Chinese, as one would write in a Chinese journal paper abstract or a conference summary.
+
+Rules:
+- Use standard academic terminology naturally, without over-stuffing jargon.
+- Sentence structure can be formal but not overly complex.
+- Avoid excessively obscure expressions.
+- Cover the core method and main conclusions with academic rigor.
+- The overall level should be comparable to a well-written Chinese academic abstract.
+
+### 7. Write the professional deep analysis
 
 Use the checklist in `references/analysis-checklist.md`.
 
@@ -155,7 +179,7 @@ When evaluating experiments, distinguish:
 - what the paper suggests but does not fully prove
 - what remains uncertain
 
-### 7. Focus hard on experiments
+### 8. Focus hard on experiments
 
 For CS and engineering papers, give extra attention to experimental evidence.
 
@@ -171,7 +195,26 @@ Always answer these questions when the source supports them:
 
 If the experiments are weak, say so clearly and explain why.
 
-### 8. Use disciplined wording
+### 9. Write the presentation outline (汇报大纲)
+
+When the user's context suggests group meeting or presentation preparation (e.g., 组会, 文献汇报, report prep mode), generate a structured presentation outline based on the analysis.
+
+Recommended structure:
+```
+一、研究背景与问题
+二、核心方法
+三、实验结果
+四、结论与启示
+```
+
+The outline should include:
+- Section titles and key bullet points for each section.
+- Annotations indicating which parts are best delivered in plain language (通俗解释) and which in formal academic register (规范表述).
+- Logical flow that tells a coherent story to an audience with mixed expertise levels.
+
+If the user is not preparing for a presentation and is not in report prep mode, this section can be condensed to a brief optional outline or omitted.
+
+### 10. Use disciplined wording
 
 Use these wording rules:
 - Say "the paper states" when describing claims from the source.
@@ -180,12 +223,12 @@ Use these wording rules:
 
 Do not overclaim novelty or practical value beyond the evidence shown.
 
-### 9. Adapt depth to the user's goal
+### 11. Adapt depth to the user's goal
 
 If the user asks for one of these modes, adapt accordingly:
 - quick reading: keep a complete translation file, but shorten only the analysis file and the chat summary
-- detailed reading: keep the full translation and full analysis
-- report prep: emphasize contributions, experiment results, and likely audience questions
+- detailed reading: keep the full translation and full analysis (including formal academic expression and presentation outline)
+- report prep: emphasize contributions, experiment results, likely audience questions, formal academic expression, and a detailed presentation outline
 - reproduction prep: emphasize implementation details, missing settings, and experimental risks
 
 If the user gives no mode, default to detailed reading.

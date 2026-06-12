@@ -1,6 +1,6 @@
 # My Agent Skills
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
 
 A unified collection of personal AI agent / Codex skills for deterministic memory routing, file routing, coding style enforcement, and task-specific reasoning.
 
@@ -25,10 +25,9 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 | python-style | [README](python-style/README.md) | Behavior-preserving Python style cleanup for research and training code. |
 | github-readme-style | [README](github-readme-style/README.md) | Standardize GitHub READMEs with bilingual docs, version info, and project structure. |
 | critical-thinking | [README](critical-thinking/README.md) | Independent judgment and critical thinking for substantive conversations. |
-| paper-review-prep | [README](paper-review-prep/README.md) | Systematic research paper analysis and presentation preparation. |
 | coursework-writing-style | [README](coursework-writing-style/README.md) | Plain, clear coursework writing for student assignments and course papers. |
 | clarify-first | [README](clarify-first/README.md) | Require explicit clarification before acting when requirements are ambiguous. |
-| paper-analyst-zh | [README](paper-analyst-zh/README.md) | Translate and deeply analyze English CS/engineering papers in Chinese. |
+| paper-analyst-zh | [README](paper-analyst-zh/README.md) | Translate, deeply analyze English CS/engineering papers in Chinese, and prepare group meeting presentations. |
 | skill-review | [README](skill-review/README.md) | Guide the review and improvement of skills inside this monorepo. |
 
 ## Installation
@@ -51,7 +50,7 @@ my-agent-skills/
 ├── python-style/       # Python coding style for research code
 ├── github-readme-style/      # README standardization conventions
 ├── critical-thinking/        # Reasoning and disagreement guidelines
-├── paper-review-prep/        # Paper reading and presentation prep
+
 ├── coursework-writing-style/   # Coursework writing style guide
 ├── clarify-first/            # Clarify requirements before acting
 ├── paper-analyst-zh/         # Translate and analyze papers in Chinese
@@ -60,7 +59,7 @@ my-agent-skills/
 
 ## Versioning
 
-Current version: v0.2.0
+Current version: v0.2.1
 
 This project follows [Semantic Versioning](https://semver.org/). See [VERSION](VERSION) for the current version number.
 

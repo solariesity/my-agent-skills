@@ -41,7 +41,18 @@ Read these files if they exist:
 - `<skill>/agents/openai.yaml`
 - `<skill>/.gitignore`
 
-### 2. Check obvious issues
+### 2. Summarize the skill
+
+Before checking for issues, first explain what this skill does in plain terms:
+
+- **功能概述**：这个 skill 是做什么的？解决什么问题？
+- **触发条件**：用户说什么或做什么会触发它？（列出关键词或典型场景）
+- **适用范围**：什么情况下用，什么情况下不用？
+- **工作流程**：主要步骤有哪些？输出什么？
+
+Keep this summary short (3-5 bullet points). It establishes a shared understanding before diving into the detailed review.
+
+### 3. Check obvious issues
 
 Inspect against monorepo conventions and common mistakes:
 
@@ -62,7 +73,7 @@ Inspect against monorepo conventions and common mistakes:
 
 If issues are found, list them as concrete, numbered items with file references.
 
-### 3. Compare with similar community skills
+### 4. Compare with similar community skills
 
 Search for comparable skills on GitHub / the web. Use 1-3 queries such as:
 
@@ -77,20 +88,20 @@ Fetch 1-3 promising READMEs or `SKILL.md` files. Identify:
 
 Summarize findings with source links.
 
-### 4. Present the evaluation
+### 5. Present the evaluation
 
 Structure the response as:
 
 1. Overall verdict (good / okay / needs work).
 2. Strengths (3-5 bullet points).
-3. Issues found in step 2 (numbered).
-4. Optimization ideas from step 3 (numbered, with source links).
+3. Issues found in step 3 (numbered).
+4. Optimization ideas from step 4 (numbered, with source links).
 5. Recommended priority: which items to fix now, which are optional.
 6. Ask: "要不要我现在改？"
 
 Wait for explicit user confirmation before making edits.
 
-### 5. Implement changes
+### 6. Implement changes
 
 If the user agrees:
 
@@ -99,7 +110,7 @@ If the user agrees:
 - Reinstall the skill to `~/.claude/skills/<skill-name>/` (copy `SKILL.md` and `agents/`).
 - Commit and push only after the user confirms.
 
-### 6. Version and push
+### 7. Version and push
 
 After changes are made:
 

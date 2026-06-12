@@ -1,4 +1,0 @@
-interface:
-  display_name: "Paper Review Prep"
-  short_description: "Prepare systematic research paper analysis for group meetings."
-  default_prompt: "Use $paper-review-prep to analyze this research paper and prepare a group meeting presentation."

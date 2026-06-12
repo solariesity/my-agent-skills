@@ -1,10 +1,10 @@
 # Paper Analyst ZH
 
-Translate and deeply analyze English computer science and engineering papers in Chinese.
+Translate and deeply analyze English computer science and engineering papers in Chinese. Also supports group meeting presentation preparation.
 
 ## Description
 
-`paper-analyst-zh` is a Codex / Claude Code skill for Chinese readers who want to understand English CS or engineering papers in Chinese. It produces a faithful full-text translation, a plain-language explanation for non-specialists, and a professional deep analysis of methods, experiments, results, strengths, weaknesses, and reproduction value.
+`paper-analyst-zh` is a Codex / Claude Code skill for Chinese readers who want to understand English CS or engineering papers in Chinese. It produces a faithful full-text translation, a plain-language explanation for non-specialists, a formal academic expression, a professional deep analysis of methods, experiments, results, strengths, weaknesses, and reproduction value, and a structured presentation outline for group meetings.
 
 If the source is a PDF, the skill automatically hands off to the `pdf` skill first.
 
@@ -12,9 +12,12 @@ If the source is a PDF, the skill automatically hands off to the `pdf` skill fir
 
 - Full Chinese translation of English papers, section by section.
 - Plain-language summary for non-specialist readers.
+- Formal academic expression (规范学术表述) — a polished Chinese restatement of the paper's contributions.
 - Professional analysis covering motivation, methods, experiments, ablations, and limitations.
+- Structured presentation outline (汇报大纲) for group meeting preparation.
 - Automatic PDF ingestion via the `pdf` skill.
 - Multiple reading modes: quick, detailed (default), report prep, and reproduction prep.
+- Triggered by Chinese phrases such as 组会, 文献汇报, 帮我梳理这篇论文, etc.
 - Produces two files by default: `paper.translation.zh.md` and `paper.analysis.zh.md`.
 
 ## Installation
@@ -57,10 +60,16 @@ Or ask the agent to use it directly:
 Use $paper-analyst-zh to translate and analyze this English paper in Chinese.
 ```
 
+For group meeting preparation, use natural Chinese:
+
+```text
+帮我梳理这篇论文，准备组会汇报。
+```
+
 When given a local PDF, the skill will first extract its content and then generate:
 
 - `paper.translation.zh.md` — full Chinese translation.
-- `paper.analysis.zh.md` — snapshot, plain explanation, professional analysis, and glossary.
+- `paper.analysis.zh.md` — snapshot, plain explanation, formal academic expression, professional analysis, presentation outline (when applicable), and glossary.
 
 ## Project Structure
 
