@@ -2,7 +2,7 @@
 
 [中文](README.zh-CN.md)
 
-[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Independent judgment and critical thinking for substantive conversations.
 
@@ -64,7 +64,7 @@ critical-thinking/
 
 ## Versioning
 
-Current version: [v0.2.1](VERSION).
+Current version: [v1.0.0](VERSION).
 
 This is a pre-1.0 skill. Guidelines may evolve as usage patterns become clearer.
 

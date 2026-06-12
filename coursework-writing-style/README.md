@@ -1,6 +1,6 @@
 # coursework-writing-style
 
-[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Plain, clear coursework writing for student assignments and course papers.
 
@@ -68,7 +68,7 @@ coursework-writing-style/
 
 ## Versioning
 
-Current version: [v0.2.1](VERSION).
+Current version: [v1.0.0](VERSION).
 
 This is a pre-1.0 skill. Rules may be refined as more coursework writing scenarios are covered.
 

@@ -1,6 +1,6 @@
 # Paper Analyst ZH
 
-[![Version](https://img.shields.io/badge/version-v0.3.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 把英文计算机与工程论文翻译成中文，并进行深度分析。同时支持组会汇报材料准备。
 
@@ -101,7 +101,7 @@ paper-analyst-zh/
 
 ## 版本
 
-当前版本：[v0.3.0](VERSION)。
+当前版本：[v1.0.0](VERSION)。
 
 本 Skill 与父仓库统一版本管理。
 

@@ -1,6 +1,6 @@
 # skill-review
 
-[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Guide the review and improvement of skills inside the my-agent-skills monorepo.
 
@@ -66,7 +66,7 @@ skill-review/
 
 ## Versioning
 
-Current version: [v0.1.1](VERSION).
+Current version: [v1.0.0](VERSION).
 
 This is a pre-1.0 skill. The review workflow may be refined as the monorepo grows.
 

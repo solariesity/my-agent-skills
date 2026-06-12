@@ -1,6 +1,6 @@
 # python-style
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > Behavior-preserving Python style cleanup for research and training code.
 
@@ -66,7 +66,7 @@ python-style/
 
 ## Versioning
 
-Current version: [v0.2.0](VERSION).
+Current version: [v1.0.0](VERSION).
 
 This is a pre-1.0 skill. Rules may evolve as more Python cleanup patterns are identified.
 

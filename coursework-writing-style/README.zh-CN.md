@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > 面向课程作业的学生写作风格：清楚、朴实、规范。
 
@@ -70,7 +70,7 @@ coursework-writing-style/
 
 ## 版本说明
 
-当前版本：[v0.2.1](VERSION)。
+当前版本：[v1.0.0](VERSION)。
 
 这是 1.0 之前的 skill，规则可能会随着更多课程作业写作场景的加入而细化。
 

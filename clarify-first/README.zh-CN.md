@@ -1,6 +1,6 @@
 # Clarify First
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 在需求不明确时，先问清楚再行动。
 
@@ -72,7 +72,7 @@ clarify-first/
 
 ## 版本
 
-当前版本：[v0.2.0](VERSION)。
+当前版本：[v1.0.0](VERSION)。
 
 这是 1.0 之前的 skill，规则可能会随着更多澄清场景的加入而细化。
 

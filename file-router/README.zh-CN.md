@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > 将用户分享的文件、Agent 生成的文件，以及用户明确要求保存的聊天内容，统一存放到当前工作目录下的结构化 `files/` 树中。
 
@@ -171,9 +171,9 @@ file-router/
 
 ## 版本说明
 
-当前版本：`v0.2.1`。
+当前版本：`v1.0.0`。
 
-file-router 在精神上遵循语义化版本。`v0.2.1` 是 1.0 之前的版本，CLI 接口和路由策略可能会随着使用模式的清晰而继续演进。
+file-router 在精神上遵循语义化版本。`v1.0.0` 是 1.0 之前的版本，CLI 接口和路由策略可能会随着使用模式的清晰而继续演进。
 
 ## 测试
 

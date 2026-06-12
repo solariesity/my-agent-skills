@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > 面向研究和训练代码的行为保持型 Python 风格清理 skill。
 
@@ -68,7 +68,7 @@ python-style/
 
 ## 版本说明
 
-当前版本：[v0.2.0](VERSION)。
+当前版本：[v1.0.0](VERSION)。
 
 这是 1.0 之前的 skill，规则可能会随着更多 Python 清理模式的发现而演进。
 

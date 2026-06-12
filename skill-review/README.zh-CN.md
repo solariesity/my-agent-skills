@@ -1,6 +1,6 @@
 # skill-review
 
-[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 > 指导评审和改进 my-agent-skills monorepo 中的 skill。
 
@@ -66,7 +66,7 @@ skill-review/
 
 ## 版本说明
 
-当前版本：[v0.1.1](VERSION)。
+当前版本：[v1.0.0](VERSION)。
 
 这是 1.0 之前的 skill，评审工作流可能会随着 monorepo 的增长而继续细化。
 

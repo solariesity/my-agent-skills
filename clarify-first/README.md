@@ -1,6 +1,6 @@
 # Clarify First
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v1.0.0-blue)](./VERSION)
 
 Ask before acting when requirements are ambiguous.
 
@@ -72,7 +72,7 @@ clarify-first/
 
 ## Versioning
 
-Current version: [v0.2.0](VERSION).
+Current version: [v1.0.0](VERSION).
 
 This is a pre-1.0 skill. Rules may be refined as more clarification scenarios are covered.
 
