@@ -1,6 +1,6 @@
 # coursework-writing-style
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
 
 > Plain, clear coursework writing for student assignments and course papers.
 
@@ -43,7 +43,13 @@ Restart the agent so the skill is discovered.
 
 ## Usage
 
-Load `SKILL.md` into your agent environment. Invoke the skill when the user asks for help with coursework or student assignments. Do not use it for published papers, creative writing, marketing copy, or social media content.
+Load `SKILL.md` into your agent environment. Invoke the skill when the user asks for help with coursework or student assignments.
+
+Example prompt:
+
+> "Use $coursework-writing-style to help me write a 1500-word course paper on the impact of AI on education. The assignment asks for an introduction, three main sections, and a conclusion, with APA citations."
+
+Do not use it for published papers, creative writing, marketing copy, or social media content.
 
 ## Project Structure
 
@@ -62,7 +68,7 @@ coursework-writing-style/
 
 ## Versioning
 
-Current version: [v0.2.0](VERSION).
+Current version: [v0.2.1](VERSION).
 
 This is a pre-1.0 skill. Rules may be refined as more coursework writing scenarios are covered.
 

@@ -56,6 +56,20 @@ description: >
 
 如果用户已经提供了作业要求文件或截图，先读取再动笔。
 
+如果用户没有一次性给出，可以用下面的话术询问：
+
+> "请把作业要求发给我，最好包括：题目/主题、字数、格式（是否需要摘要/引言/结论、引用格式）、提交形式（个人/小组、截止时间），以及评分重点（论点、结构、分析深度还是表达）。"
+
+## 最小写作流程
+
+收到任务后按以下顺序执行：
+
+1. **确认/询问作业要求**：确保知道题目、字数、格式、提交形式和评分重点。
+2. **列出简要大纲**：给出标题和各段要点，让用户确认后再写正文。
+3. **按类型和语言规范写作**：参考下方的作业类型表和中英文规范。
+4. **自检**：是否符合字数/格式？有无堆砌分点？有无不必要的高级词或复杂句？语气是否符合作业类型？
+5. **输出最终文本**：直接给出正文，不需要额外解释"我用了什么风格"。
+
 ## 按作业类型调整语气
 
 | 类型 | 重点 |
@@ -65,6 +79,24 @@ description: >
 | 读书报告/文献综述 | 准确概括原文，避免过度评价 |
 | 反思/讨论回应 | 可以带个人思考，但仍需逻辑清晰、言之有物 |
 | 小组作业 | 注意表述一致性，避免人称混乱 |
+
+## 改写示例
+
+### 中文示例
+
+**改前（过于花哨）：**
+> 人工智能宛如一轮冉冉升起的朝阳，正以雷霆万钧之势重塑教育的每一个角落，堪称教育史上的里程碑。
+
+**改后（朴实、清楚）：**
+> 人工智能正在改变教育的多个方面，例如个性化学习、自动批改和教学管理。这些变化既带来机会，也带来挑战。
+
+### 英文示例
+
+**Before (overly complex):**
+> The unprecedented proliferation of artificial intelligence, which has permeated virtually every facet of modern education, necessitates a comprehensive reevaluation of pedagogical paradigms.
+
+**After (plain, student-level):**
+> Artificial intelligence is changing education in many areas, such as personalized learning, automatic grading, and school management. These changes bring both opportunities and challenges.
 
 ## 中文写作规范
 
@@ -98,6 +130,17 @@ description: >
 ### 整体水平
 - 以中国大学生/非英语专业研究生水平为准。
 - 目标是"清楚、准确、自然"，而不是"看起来像母语者写的"。
+
+### 段落结构
+- 每段只表达一个主要观点。
+- 段首句概括本段内容，后面用 2-4 句解释或举例。
+- 段落之间用简单的过渡句连接，避免突然跳转。
+
+### 常见学生错误（避免）
+- 用复杂从句包装简单意思。
+- 刻意使用生僻词或"高大上"表达。
+- 一句话过长，主语和谓语离得太远。
+- 中式英语直译套话，如 "with the development of society"、"every coin has two sides"。
 
 ## 执行要点
 - 收到写作任务后，直接按上述规范输出，不需要先说明"我将采用某某风格"。

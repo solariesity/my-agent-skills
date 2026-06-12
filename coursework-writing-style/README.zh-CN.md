@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
 
 > 面向课程作业的学生写作风格：清楚、朴实、规范。
 
@@ -45,7 +45,13 @@ rm -rf /tmp/my-agent-skills
 
 ## 使用方式
 
-将 `SKILL.md` 加载到 Agent 环境中。当用户请求帮助完成课程作业或学生提交物时调用此 skill。不要用于发表级学术论文、创意写作、营销文案或社交媒体内容。
+将 `SKILL.md` 加载到 Agent 环境中。当用户请求帮助完成课程作业或学生提交物时调用此 skill。
+
+示例提示词：
+
+> "帮我用 $coursework-writing-style 写一篇 2000 字的课程论文，主题是人工智能对教育的影响。要求包含引言、三个主体部分和结论，引用格式用 APA。"
+
+请勿用于发表级学术论文、创意写作、营销文案或社交媒体内容。
 
 ## 项目结构
 
@@ -64,7 +70,7 @@ coursework-writing-style/
 
 ## 版本说明
 
-当前版本：[v0.2.0](VERSION)。
+当前版本：[v0.2.1](VERSION)。
 
 这是 1.0 之前的 skill，规则可能会随着更多课程作业写作场景的加入而细化。
 
