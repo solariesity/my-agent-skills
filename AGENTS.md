@@ -68,9 +68,23 @@ Keep paragraphs short and use code blocks with language tags.
 
 ## Versioning
 
-- The repository uses a single top-level `VERSION` file.
-- Individual skills do not maintain separate version files unless they have a specific reason.
-- Keep badge versions in READMEs in sync with `VERSION`.
+- The repository has a single top-level `VERSION` file that represents the monorepo as a whole.
+- Each skill may also have its own `VERSION` file. If a skill has a `VERSION` file, its README version badge should point to it.
+- The user is responsible for version bumps:
+  - When modifying a skill, the user decides whether to update that skill's `VERSION`.
+  - The user personally updates the root `VERSION` for major repository-wide changes.
+- Keep badge versions in skill READMEs in sync with their corresponding `VERSION` file.
+
+### When modifying the repository
+
+Whenever you make changes to this repository (skill content, READMEs, structure, conventions, etc.):
+
+1. Read the relevant `VERSION` file(s):
+   - The root `VERSION` for repository-level changes.
+   - The skill's `VERSION` if you are modifying a skill that has one.
+2. Report the current version number(s) to the user.
+3. Ask whether they want to bump any version.
+4. Only update version files and badges if the user explicitly confirms.
 
 ## This file will evolve
 
