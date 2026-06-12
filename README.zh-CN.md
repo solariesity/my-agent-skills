@@ -38,6 +38,7 @@
 my-agent-skills/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 ├── memory-router/            # 对话记忆路由
 ├── file-router/              # 文件和输出工作树路由
 ├── python-style-skill/       # 研究代码的 Python 风格约束
@@ -46,6 +47,12 @@ my-agent-skills/
 ├── paper-review-prep/        # 论文阅读和组会汇报准备
 └── academic-writing-style/   # 学术写作风格指南
 ```
+
+## 版本
+
+当前版本：v0.1.0
+
+本项目遵循 [Semantic Versioning](https://semver.org/)。当前版本号见 [VERSION](VERSION)。
 
 ## 贡献
 

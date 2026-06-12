@@ -38,6 +38,7 @@ After installation, the target agent platform loads the skill automatically from
 my-agent-skills/
 ├── README.md
 ├── README.zh-CN.md
+├── VERSION
 ├── memory-router/            # Conversational memory routing
 ├── file-router/              # File and output workspace routing
 ├── python-style-skill/       # Python coding style for research code
@@ -46,6 +47,12 @@ my-agent-skills/
 ├── paper-review-prep/        # Paper reading and presentation prep
 └── academic-writing-style/   # Academic writing style guide
 ```
+
+## Versioning
+
+Current version: v0.1.0
+
+This project follows [Semantic Versioning](https://semver.org/). See [VERSION](VERSION) for the current version number.
 
 ## Contributing
 
