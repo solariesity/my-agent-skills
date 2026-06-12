@@ -1,6 +1,6 @@
 # File Router
 
-[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.1-blue)](./VERSION)
 
 > Route user-shared files, agent-created artifacts, and explicitly saved chat notes into a structured `files/` tree inside the current working directory.
 
@@ -169,9 +169,9 @@ file-router/
 
 ## Versioning
 
-Current version: `v0.2.0`.
+Current version: `v0.2.1`.
 
-file-router follows semantic versioning in spirit. `v0.2.0` is a pre-1.0 release; the CLI surface and routing policies may still evolve as usage patterns become clearer.
+file-router follows semantic versioning in spirit. `v0.2.1` is a pre-1.0 release; the CLI surface and routing policies may still evolve as usage patterns become clearer.
 
 ## Testing
 
@@ -183,7 +183,7 @@ python -m unittest discover -s tests -v
 
 ## Contributing
 
-Suggestions and pull requests are welcome.
+Contributions are welcome. See the [parent repository README](../README.md#contributing) for guidelines.
 
 ## Main Commands
 

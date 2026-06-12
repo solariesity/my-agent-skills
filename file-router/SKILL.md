@@ -7,7 +7,6 @@ description: Route user-shared files, agent-created artifacts, and explicitly sa
 
 Use this skill when file storage should follow stable workspace rules instead of ad hoc folders.
 By default, file-router creates and uses a `files/` directory under the current working directory.
-Current version: `0.2.0`.
 
 Prefer it when:
 
@@ -16,6 +15,20 @@ Prefer it when:
 - the user explicitly asks to save an important chat message into a file
 - a project needs a repeatable folder skeleton
 - the user asks where a file should go or asks to find a previously stored file
+
+## 触发条件
+
+当用户出现以下行为时，自动应用此规范：
+- 在聊天中分享文件（PDF、图片、文档等），需要长期存放
+- Agent 创建了代码、报告、图片、笔记等输出，需要统一管理
+- 用户明确说"保存这条"、"记住这个"、"写进提醒"、"存一下"
+- 需要搭建项目目录骨架或工作区结构
+- 用户问"这个文件放哪里"或者"之前存的XX在哪"
+
+**不适用场景**：
+- 普通聊天内容的自动存档（不可自动，必须等用户明确保存信号）
+- 非文件类任务（代码审查、论文分析、风格清理等）
+- 已有独立文件管理方案的项目（尊重现有约定）
 
 ## Use The Main Entry Point
 
