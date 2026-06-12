@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Review"
+  short_description: "Review and improve skills in this monorepo."
+  default_prompt: "Use $skill-review to evaluate this skill: load its files, check conventions, compare with similar community skills, and ask me before making changes."

@@ -1,6 +1,6 @@
 # My Agent Skills
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
 
 A unified collection of personal AI agent / Codex skills for deterministic memory routing, file routing, coding style enforcement, and task-specific reasoning.
 
@@ -29,6 +29,7 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 | coursework-writing-style | [README](coursework-writing-style/README.md) | Plain, clear coursework writing for student assignments and course papers. |
 | clarify-first | [README](clarify-first/README.md) | Require explicit clarification before acting when requirements are ambiguous. |
 | paper-analyst-zh | [README](paper-analyst-zh/README.md) | Translate and deeply analyze English CS/engineering papers in Chinese. |
+| skill-review | [README](skill-review/README.md) | Guide the review and improvement of skills inside this monorepo. |
 
 ## Installation
 
@@ -53,12 +54,13 @@ my-agent-skills/
 ├── paper-review-prep/        # Paper reading and presentation prep
 ├── coursework-writing-style/   # Coursework writing style guide
 ├── clarify-first/            # Clarify requirements before acting
-└── paper-analyst-zh/         # Translate and analyze papers in Chinese
+├── paper-analyst-zh/         # Translate and analyze papers in Chinese
+└── skill-review/             # Review and improve skills in this monorepo
 ```
 
 ## Versioning
 
-Current version: v0.1.0
+Current version: v0.2.0
 
 This project follows [Semantic Versioning](https://semver.org/). See [VERSION](VERSION) for the current version number.
 

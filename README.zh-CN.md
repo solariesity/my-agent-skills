@@ -1,6 +1,6 @@
 # My Agent Skills
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
 
 统一的个人 AI Agent / Codex Skill 集合，用于确定性记忆路由、文件路由、代码风格约束以及任务型推理。
 
@@ -29,6 +29,7 @@
 | coursework-writing-style | [README](coursework-writing-style/README.md) | 面向课程作业的学生写作风格：清楚、朴实、规范。 |
 | clarify-first | [README](clarify-first/README.md) | 在需求不明确时先澄清再行动。 |
 | paper-analyst-zh | [README](paper-analyst-zh/README.md) | 将英文计算机/工程论文翻译成中文并深度分析。 |
+| skill-review | [README](skill-review/README.md) | 指导评审和改进本 monorepo 中的 skill。 |
 
 ## 安装
 
@@ -53,12 +54,13 @@ my-agent-skills/
 ├── paper-review-prep/        # 论文阅读和组会汇报准备
 ├── coursework-writing-style/   # 课程作业写作风格指南
 ├── clarify-first/            # 先澄清需求再行动
-└── paper-analyst-zh/         # 英文学术论文中文翻译与深度分析
+├── paper-analyst-zh/         # 英文学术论文中文翻译与深度分析
+└── skill-review/             # 评审和改进本 monorepo 中的 skill
 ```
 
 ## 版本
 
-当前版本：v0.1.0
+当前版本：v0.2.0
 
 本项目遵循 [Semantic Versioning](https://semver.org/)。当前版本号见 [VERSION](VERSION)。
 
