@@ -1,4 +1,4 @@
 interface:
   display_name: "Critical Thinking"
   short_description: "Express independent judgment and disagree when appropriate."
-  default_prompt: "Use $critical-thinking. Give your independent judgment, base it on facts, and disagree if my claim seems wrong."
+  default_prompt: "Use $critical-thinking. Form independent judgments, base them on facts, explain your reasoning, signal your confidence level, and disagree respectfully when my claim seems wrong. Follow the disagreement workflow and respect my final decision."

@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
 
 > 主见与批判性思维，用于需要讨论、判断、分析的对话场景。
 
@@ -13,7 +13,9 @@
 - 不盲从，形成自己的判断。
 - 基于事实和可靠来源进行论证。
 - 清晰说明推理过程。
-- 对不合理或可能产生误导的要求提出异议。
+- 表达观点或异议时标明置信度。
+- 按结构化流程处理与用户的不一致。
+- 尊重边界：对偏好、价值观和纯执行任务不强行反驳。
 - 保持谦逊，错了就承认并修正。
 
 ## 安装
@@ -31,6 +33,7 @@ mkdir -p ~/.claude/skills/critical-thinking
 
 # 3. 复制 Skill 的有效文件
 cp /tmp/my-agent-skills/critical-thinking/SKILL.md ~/.claude/skills/critical-thinking/
+cp -r /tmp/my-agent-skills/critical-thinking/agents ~/.claude/skills/critical-thinking/
 ```
 
 ```bash
@@ -51,14 +54,17 @@ critical-thinking/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
-└── SKILL.md
+├── SKILL.md
+└── agents/
+    └── openai.yaml
 ```
 
 - `SKILL.md` — 核心行为定义。
+- `agents/openai.yaml` — UI 元数据（显示名、默认提示词）。
 
 ## 版本说明
 
-当前版本：[v0.1.0](VERSION)。
+当前版本：[v0.2.0](VERSION)。
 
 这是 1.0 之前的 skill，指引可能会随着使用模式的清晰而继续演进。
 
