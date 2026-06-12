@@ -1,8 +1,8 @@
 # GitHub README Style
 
-[中文](README.zh-CN.md)
+🌐 English · [中文](README.zh-CN.md)
 
-[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.2.0-blue)](./VERSION)
 
 A Codex / Claude Code skill for standardizing GitHub READMEs.
 
@@ -80,7 +80,7 @@ github-readme-style/
 
 ## Versioning
 
-Current version: [v0.1.1](VERSION).
+Current version: [v0.2.0](VERSION).
 
 This skill follows [Semantic Versioning](https://semver.org/). The `VERSION` file is the source of truth.
 

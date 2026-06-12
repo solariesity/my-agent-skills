@@ -24,10 +24,17 @@ A standard README should include the following sections in this order. Skip a se
    - Project name as a level-1 heading (`# project-name`)
    - One-line description immediately below the title
    - Optional: badges (CI, version, license, PyPI, npm, etc.) on the next line
+   - Recommended: add a language switcher at the top, for example:
+     - In `README.md`: `🌐 English · [中文](README.zh-CN.md)`
+     - In `README.zh-CN.md`: `[English](README.md) · 中文`
 
 2. **Description**
    - 2-5 sentences explaining what the project does and why it exists
    - Mention the main problem it solves or the main capability it provides
+   - Use a clear structure when applicable:
+     1. **Context / Problem**: what situation or pain point the project addresses.
+     2. **Capability**: what the project does.
+     3. **Benefit / Differentiation**: why a user should choose it.
 
 3. **Features** (when applicable)
    - Bulleted list of key capabilities
@@ -180,6 +187,40 @@ Place badges directly under the project title.
 4. Check that the version number matches the repository metadata.
 5. Remove generated directories from the directory tree.
 6. Fix broken links or placeholders.
+
+### Review Output Template
+
+When reporting review findings, use this structure:
+
+```markdown
+## README Review Report
+
+### Overall
+- Status: ✅ Pass / ⚠️ Needs minor fixes / ❌ Needs major rework
+- Scope reviewed: README.md, README.zh-CN.md, VERSION
+
+### Required Sections
+- Title / Header: ✅ / ❌
+- Description: ✅ / ❌
+- Features: ✅ / ❌ / N/A
+- Installation: ✅ / ❌
+- Usage: ✅ / ❌
+- Project Structure: ✅ / ❌ / N/A
+- Versioning: ✅ / ❌
+- Contributing: ✅ / ❌ / N/A
+- License: ✅ / ❌ / N/A
+
+### Bilingual Consistency
+- README.md and README.zh-CN.md cover the same sections: ✅ / ❌
+- Technical terms left in English in the Chinese version: ✅ / ❌
+
+### Issues Found
+1. **Issue**: ...
+   **Suggestion**: ...
+
+### Recommended Fixes
+1. ...
+```
 
 ## Editing Workflow
 
