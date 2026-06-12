@@ -35,9 +35,6 @@ Thumbs.db
 # Logs
 *.log
 
-# Old WorkBuddy artifacts
-.workbuddy*
-
 # Build artifacts
 dist/
 build/

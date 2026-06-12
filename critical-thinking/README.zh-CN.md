@@ -18,30 +18,27 @@
 
 ## 安装
 
-这个 skill 存放在 [`my-agent-skills`](https://github.com/solariesity/my-agent-skills) 集合仓库中。克隆该仓库并进入 critical-thinking 目录：
+本 Skill 是 `my-agent-skills` monorepo 的一部分。安装时先将仓库克隆到临时目录，再只把真正起作用的部分复制到 Agent 的 skills 文件夹（不复制 README、测试等无关文件）。
 
 ```bash
-git clone https://github.com/solariesity/my-agent-skills.git
-cd my-agent-skills/critical-thinking
+# 1. 将整个 monorepo 克隆到临时目录
+git clone git@github.com:solariesity/my-agent-skills.git /tmp/my-agent-skills
+
+# 2. 在 Agent 的 skills 目录下创建本 Skill 的子目录
+mkdir -p ~/.claude/skills/critical-thinking
+# 如果是 Codex，使用：
+# mkdir -p ~/.codex/skills/critical-thinking
+
+# 3. 复制 Skill 的有效文件
+cp /tmp/my-agent-skills/critical-thinking/SKILL.md ~/.claude/skills/critical-thinking/
 ```
 
-### 仅安装 Skill 部分
-
-如果你只想把 critical-thinking 当作 skill 安装到 Agent 环境，可以使用临时克隆的方式：
-
 ```bash
-# 1. 克隆集合仓库到临时目录
-git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
-
-# 2. 只复制 skill 定义到目标位置
-mkdir -p ~/.codex/skills/critical-thinking
-cp /tmp/my-agent-skills/critical-thinking/SKILL.md ~/.codex/skills/critical-thinking/
-
-# 3. 删除临时目录
+# 4. 清理临时目录
 rm -rf /tmp/my-agent-skills
 ```
 
-Windows 上对应路径是 `C:\Users\<用户名>\.codex\skills\critical-thinking\`。
+重启 Agent 以使其被发现。
 
 ## 使用方式
 

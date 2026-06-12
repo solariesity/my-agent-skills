@@ -27,6 +27,8 @@
 | critical-thinking | [README](critical-thinking/README.md) | 用于实质性对话的独立思考与批判性思维。 |
 | paper-review-prep | [README](paper-review-prep/README.md) | 系统性文献分析与组会汇报准备。 |
 | academic-writing-style | [README](academic-writing-style/README.md) | 朴实、严谨的学术与任务型写作风格。 |
+| clarify-first | [README](clarify-first/README.md) | 在需求不明确时先澄清再行动。 |
+| paper-analyst-zh | [README](paper-analyst-zh/README.md) | 将英文计算机/工程论文翻译成中文并深度分析。 |
 
 ## 安装
 
@@ -40,14 +42,18 @@
 my-agent-skills/
 ├── README.md
 ├── README.zh-CN.md
+├── AGENTS.md                 # 本仓库的持久化约定
 ├── VERSION
+├── .gitignore
 ├── memory-router/            # 对话记忆路由
 ├── file-router/              # 文件和输出工作树路由
 ├── python-style-skill/       # 研究代码的 Python 风格约束
 ├── github-readme-style/      # README 规范化约定
 ├── critical-thinking/        # 独立思考与提出异议的约束
 ├── paper-review-prep/        # 论文阅读和组会汇报准备
-└── academic-writing-style/   # 学术写作风格指南
+├── academic-writing-style/   # 学术写作风格指南
+├── clarify-first/            # 先澄清需求再行动
+└── paper-analyst-zh/         # 英文学术论文中文翻译与深度分析
 ```
 
 ## 版本

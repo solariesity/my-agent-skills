@@ -123,6 +123,36 @@ project-name/
 - For Node: prefer `npm install` or `pnpm install`.
 - If there are optional dependencies, mention them in a subsection.
 
+### Skill-specific installation workflow
+
+Use the clone-to-tmp workflow **only** when the target project is a Codex / Claude Code skill (i.e., it contains a `SKILL.md` file and is meant to be loaded from `~/.claude/skills/` or `~/.codex/skills/`).
+
+When the skill lives inside a monorepo:
+
+1. Clone the parent repository to a temporary directory.
+2. Create a directory for the skill inside the agent's skills folder.
+3. Copy **only the working files** of the skill (`SKILL.md`, `agents/`, `references/`, `scripts/`, etc.). Do **not** copy `README.md`, `README.zh-CN.md`, tests, or other non-essential files.
+4. Restart the agent.
+
+Example:
+
+```bash
+# Clone the parent monorepo to a temporary location
+git clone <repo-url> /tmp/<repo-name>
+
+# Create the skill directory in the agent's skills folder
+mkdir -p ~/.claude/skills/<skill-name>
+# Or, for Codex:
+# mkdir -p ~/.codex/skills/<skill-name>
+
+# Copy only the working parts of the skill
+cp /tmp/<repo-name>/<skill-name>/SKILL.md ~/.claude/skills/<skill-name>/
+cp -r /tmp/<repo-name>/<skill-name>/agents ~/.claude/skills/<skill-name>/
+# Copy references/ and scripts/ only if the skill has them
+```
+
+If the project is **not** a skill, use the normal installation instructions for its technology (e.g., `pip install`, `npm install`) and omit this workflow entirely.
+
 ## Usage Section Rules
 
 - Provide the simplest complete example first.

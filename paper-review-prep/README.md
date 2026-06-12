@@ -16,30 +16,27 @@ Use this skill when preparing for a group meeting or presentation by analyzing a
 
 ## Installation
 
-This skill lives inside the [`my-agent-skills`](https://github.com/solariesity/my-agent-skills) monorepo. Clone that repository and enter the paper-review-prep directory:
-
-```bash
-git clone https://github.com/solariesity/my-agent-skills.git
-cd my-agent-skills/paper-review-prep
-```
-
-### Install Only the Skill
-
-If you only want to install paper-review-prep as a skill in an agent environment, use a temporary clone:
+This skill is part of the `my-agent-skills` monorepo. Install it by cloning the repo to a temporary directory and copying only the working files into your agent's skills folder (READMEs, tests, and other non-essential files are left out).
 
 ```bash
 # 1. Clone the monorepo to a temporary directory
-git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
+git clone git@github.com:solariesity/my-agent-skills.git /tmp/my-agent-skills
 
-# 2. Copy only the skill definition to the target location
-mkdir -p ~/.codex/skills/paper-review-prep
-cp /tmp/my-agent-skills/paper-review-prep/SKILL.md ~/.codex/skills/paper-review-prep/
+# 2. Create the skill directory in the agent's skills folder
+mkdir -p ~/.claude/skills/paper-review-prep
+# Or, for Codex:
+# mkdir -p ~/.codex/skills/paper-review-prep
 
-# 3. Remove the temporary directory
+# 3. Copy the working parts of the skill
+cp /tmp/my-agent-skills/paper-review-prep/SKILL.md ~/.claude/skills/paper-review-prep/
+```
+
+```bash
+# 4. Clean up the temporary directory
 rm -rf /tmp/my-agent-skills
 ```
 
-On Windows, use `C:\Users\<username>\.codex\skills\paper-review-prep\` as the target path.
+Restart the agent so the skill is discovered.
 
 ## Usage
 

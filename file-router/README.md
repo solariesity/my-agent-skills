@@ -16,41 +16,30 @@ file-router is a Codex skill and local CLI tool that helps an agent decide where
 
 ## Installation
 
-file-router requires Python 3.10 or newer.
-
-This skill lives inside the [`my-agent-skills`](https://github.com/solariesity/my-agent-skills) monorepo. Clone that repository and enter the file-router directory:
-
-```bash
-git clone https://github.com/solariesity/my-agent-skills.git
-cd my-agent-skills/file-router
-```
-
-No package installation is required for CLI usage. Run commands directly from the `scripts/` directory:
-
-```bash
-python scripts/file_router_cli.py --help
-```
-
-### Install Only the Skill
-
-If you only want to install file-router as a skill in an agent environment (without project-maintenance files like `README`, `tests`, or `VERSION`), use a temporary clone:
+This skill is part of the `my-agent-skills` monorepo. Install it by cloning the repo to a temporary directory and copying only the working files into your agent's skills folder (READMEs, tests, and other non-essential files are left out).
 
 ```bash
 # 1. Clone the monorepo to a temporary directory
-git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
+git clone git@github.com:solariesity/my-agent-skills.git /tmp/my-agent-skills
 
-# 2. Copy only the core skill files to the target location
-mkdir -p ~/.codex/skills/file-router
-cp -r /tmp/my-agent-skills/file-router/SKILL.md ~/.codex/skills/file-router/
-cp -r /tmp/my-agent-skills/file-router/agents ~/.codex/skills/file-router/
-cp -r /tmp/my-agent-skills/file-router/references ~/.codex/skills/file-router/
-cp -r /tmp/my-agent-skills/file-router/scripts ~/.codex/skills/file-router/
+# 2. Create the skill directory in the agent's skills folder
+mkdir -p ~/.claude/skills/file-router
+# Or, for Codex:
+# mkdir -p ~/.codex/skills/file-router
 
-# 3. Remove the temporary directory
+# 3. Copy the working parts of the skill
+cp /tmp/my-agent-skills/file-router/SKILL.md ~/.claude/skills/file-router/
+cp -r /tmp/my-agent-skills/file-router/agents ~/.claude/skills/file-router/
+cp -r /tmp/my-agent-skills/file-router/references ~/.claude/skills/file-router/
+cp -r /tmp/my-agent-skills/file-router/scripts ~/.claude/skills/file-router/
+```
+
+```bash
+# 4. Clean up the temporary directory
 rm -rf /tmp/my-agent-skills
 ```
 
-On Windows, use `C:\Users\<username>\.codex\skills\file-router\` as the target path.
+Restart the agent so the skill is discovered.
 
 ## Usage
 

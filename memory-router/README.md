@@ -17,43 +17,30 @@ memory-router is a skill and local tooling layer for AI agents that need structu
 
 ## Installation
 
-memory-router requires Python 3.10 or newer.
-
-This skill lives inside the [`my-agent-skills`](https://github.com/solariesity/my-agent-skills) monorepo. Clone that repository and enter the memory-router directory:
-
-```bash
-git clone https://github.com/solariesity/my-agent-skills.git
-cd my-agent-skills/memory-router
-```
-
-No package installation is required for CLI usage. Run commands directly from the `scripts/` directory:
-
-```bash
-python scripts/memrouter_cli.py --help
-```
-
-For convenience, you can add the `scripts/` directory to your `PATH` or create a shell alias.
-
-### Install Only the Skill
-
-If you only want to install memory-router as a skill in an agent environment (without project-maintenance files like `README`, `tests`, or `VERSION`), use a temporary clone:
+This skill is part of the `my-agent-skills` monorepo. Install it by cloning the repo to a temporary directory and copying only the working files into your agent's skills folder (READMEs, tests, and other non-essential files are left out).
 
 ```bash
 # 1. Clone the monorepo to a temporary directory
-git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
+git clone git@github.com:solariesity/my-agent-skills.git /tmp/my-agent-skills
 
-# 2. Copy only the core skill files to the target location
-mkdir -p ~/.codex/skills/memory-router
-cp -r /tmp/my-agent-skills/memory-router/SKILL.md ~/.codex/skills/memory-router/
-cp -r /tmp/my-agent-skills/memory-router/agents ~/.codex/skills/memory-router/
-cp -r /tmp/my-agent-skills/memory-router/references ~/.codex/skills/memory-router/
-cp -r /tmp/my-agent-skills/memory-router/scripts ~/.codex/skills/memory-router/
+# 2. Create the skill directory in the agent's skills folder
+mkdir -p ~/.claude/skills/memory-router
+# Or, for Codex:
+# mkdir -p ~/.codex/skills/memory-router
 
-# 3. Remove the temporary directory
+# 3. Copy the working parts of the skill
+cp /tmp/my-agent-skills/memory-router/SKILL.md ~/.claude/skills/memory-router/
+cp -r /tmp/my-agent-skills/memory-router/agents ~/.claude/skills/memory-router/
+cp -r /tmp/my-agent-skills/memory-router/references ~/.claude/skills/memory-router/
+cp -r /tmp/my-agent-skills/memory-router/scripts ~/.claude/skills/memory-router/
+```
+
+```bash
+# 4. Clean up the temporary directory
 rm -rf /tmp/my-agent-skills
 ```
 
-On Windows, use `C:\Users\<username>\.codex\skills\memory-router\` as the target path.
+Restart the agent so the skill is discovered.
 
 ## Usage
 

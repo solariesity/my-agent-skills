@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clarify First"
+  short_description: "Ask before acting when requirements are ambiguous."
+  default_prompt: "Use $clarify-first and do not start meaningful work until my requirements are explicit; whenever anything important is unclear, ask me using lettered options for the real choices plus one final Other option, include a recommended choice, and keep clarifying until the path is confirmed."

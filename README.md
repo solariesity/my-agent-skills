@@ -27,6 +27,8 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 | critical-thinking | [README](critical-thinking/README.md) | Independent judgment and critical thinking for substantive conversations. |
 | paper-review-prep | [README](paper-review-prep/README.md) | Systematic research paper analysis and presentation preparation. |
 | academic-writing-style | [README](academic-writing-style/README.md) | Plain, rigorous academic and task-oriented writing style. |
+| clarify-first | [README](clarify-first/README.md) | Require explicit clarification before acting when requirements are ambiguous. |
+| paper-analyst-zh | [README](paper-analyst-zh/README.md) | Translate and deeply analyze English CS/engineering papers in Chinese. |
 
 ## Installation
 
@@ -40,14 +42,18 @@ After installation, the target agent platform loads the skill automatically from
 my-agent-skills/
 ├── README.md
 ├── README.zh-CN.md
+├── AGENTS.md                 # Durable conventions for this repo
 ├── VERSION
+├── .gitignore
 ├── memory-router/            # Conversational memory routing
 ├── file-router/              # File and output workspace routing
 ├── python-style-skill/       # Python coding style for research code
 ├── github-readme-style/      # README standardization conventions
 ├── critical-thinking/        # Reasoning and disagreement guidelines
 ├── paper-review-prep/        # Paper reading and presentation prep
-└── academic-writing-style/   # Academic writing style guide
+├── academic-writing-style/   # Academic writing style guide
+├── clarify-first/            # Clarify requirements before acting
+└── paper-analyst-zh/         # Translate and analyze papers in Chinese
 ```
 
 ## Versioning

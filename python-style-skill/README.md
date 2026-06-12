@@ -16,30 +16,27 @@ Use this skill when reviewing or standardizing Python naming, module or file nam
 
 ## Installation
 
-This skill lives inside the [`my-agent-skills`](https://github.com/solariesity/my-agent-skills) monorepo. Clone that repository and enter the python-style-skill directory:
-
-```bash
-git clone https://github.com/solariesity/my-agent-skills.git
-cd my-agent-skills/python-style-skill
-```
-
-### Install Only the Skill
-
-If you only want to install python-style-skill as a skill in an agent environment, use a temporary clone:
+This skill is part of the `my-agent-skills` monorepo. Install it by cloning the repo to a temporary directory and copying only the working files into your agent's skills folder (READMEs, tests, and other non-essential files are left out).
 
 ```bash
 # 1. Clone the monorepo to a temporary directory
-git clone https://github.com/solariesity/my-agent-skills.git /tmp/my-agent-skills
+git clone git@github.com:solariesity/my-agent-skills.git /tmp/my-agent-skills
 
-# 2. Copy only the skill definition to the target location
-mkdir -p ~/.codex/skills/python-style-skill
-cp /tmp/my-agent-skills/python-style-skill/SKILL.md ~/.codex/skills/python-style-skill/
+# 2. Create the skill directory in the agent's skills folder
+mkdir -p ~/.claude/skills/python-style-skill
+# Or, for Codex:
+# mkdir -p ~/.codex/skills/python-style-skill
 
-# 3. Remove the temporary directory
+# 3. Copy the working parts of the skill
+cp /tmp/my-agent-skills/python-style-skill/SKILL.md ~/.claude/skills/python-style-skill/
+```
+
+```bash
+# 4. Clean up the temporary directory
 rm -rf /tmp/my-agent-skills
 ```
 
-On Windows, use `C:\Users\<username>\.codex\skills\python-style-skill\` as the target path.
+Restart the agent so the skill is discovered.
 
 ## Usage
 

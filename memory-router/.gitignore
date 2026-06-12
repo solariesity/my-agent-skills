@@ -1,4 +1,43 @@
-__pycache__/
-*.pyc
+# Claude / Codex local project state
+.claude/
+.codex/
+
+# Temporary and cache directories
+.tmp/
+tmp/
 .tmp-tests/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+.env
+
+# Node
+node_modules/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Old WorkBuddy artifacts
 .workbuddy*
+
+# Build artifacts
+dist/
+build/
