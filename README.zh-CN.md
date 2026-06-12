@@ -14,21 +14,21 @@
 - 面向研究和训练代码的 Python 风格指南
 - 独立思考、论文阅读和学术写作辅助
 
+## 我的 Skill
+
+| Skill | README | 简介 |
+|-------|--------|------|
+| memory-router | [README](memory-router/README.md) | 按用户、项目、类型、日期将对话记忆路由到确定性的 Markdown 文件。 |
+| file-router | [README](file-router/README.md) | 将用户文件和生成输出路由到结构化的 `./files/` 工作树。 |
+| python-style-skill | [README](python-style-skill/README.md) | 面向研究和训练代码的行为保持型 Python 风格清理。 |
+| github-readme-style | [README](github-readme-style/README.md) | 规范 GitHub README，包含中英双语、版本号和目录结构。 |
+| critical-thinking | [README](critical-thinking/README.md) | 用于实质性对话的独立思考与批判性思维。 |
+| paper-review-prep | [README](paper-review-prep/README.md) | 系统性文献分析与组会汇报准备。 |
+| academic-writing-style | [README](academic-writing-style/README.md) | 朴实、严谨的学术与任务型写作风格。 |
+
 ## 安装
 
-每个 Skill 的 README 中都有 **仅安装 Skill 部分** 的安装说明。选择你需要的 Skill，按对应 README 中的命令安装即可：
-
-| Skill | README |
-|-------|--------|
-| memory-router | [README](memory-router/README.md) |
-| file-router | [README](file-router/README.md) |
-| python-style-skill | [README](python-style-skill/README.md) |
-| github-readme-style | [README](github-readme-style/README.md) |
-| critical-thinking | [README](critical-thinking/README.md) |
-| paper-review-prep | [README](paper-review-prep/README.md) |
-| academic-writing-style | [README](academic-writing-style/README.md) |
-
-## 使用
+每个 Skill 的 README 中都有 **仅安装 Skill 部分** 的安装说明。从上方表格选择你需要的 Skill，按对应 README 中的命令安装即可。
 
 安装完成后，目标 Agent 平台会自动从 `~/.codex/skills/<skill-name>/` 加载该 Skill。具体用法和示例请参考各 Skill 目录下的 `README.md`。
 

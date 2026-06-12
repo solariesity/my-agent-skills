@@ -14,21 +14,21 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 - Coding style guides for research and training code
 - Critical thinking, paper review, and academic writing helpers
 
+## My Skills
+
+| Skill | README | Introduction |
+|-------|--------|--------------|
+| memory-router | [README](memory-router/README.md) | Route conversational memory into deterministic markdown files by user, project, type, and date. |
+| file-router | [README](file-router/README.md) | Route user files and generated outputs into a structured `./files/` workspace. |
+| python-style-skill | [README](python-style-skill/README.md) | Behavior-preserving Python style cleanup for research and training code. |
+| github-readme-style | [README](github-readme-style/README.md) | Standardize GitHub READMEs with bilingual docs, version info, and project structure. |
+| critical-thinking | [README](critical-thinking/README.md) | Independent judgment and critical thinking for substantive conversations. |
+| paper-review-prep | [README](paper-review-prep/README.md) | Systematic research paper analysis and presentation preparation. |
+| academic-writing-style | [README](academic-writing-style/README.md) | Plain, rigorous academic and task-oriented writing style. |
+
 ## Installation
 
-Each skill has its own installation instructions in its README under the **Install only the skill** section. Pick the skill you need and follow its guide:
-
-| Skill | README |
-|-------|--------|
-| memory-router | [README](memory-router/README.md) |
-| file-router | [README](file-router/README.md) |
-| python-style-skill | [README](python-style-skill/README.md) |
-| github-readme-style | [README](github-readme-style/README.md) |
-| critical-thinking | [README](critical-thinking/README.md) |
-| paper-review-prep | [README](paper-review-prep/README.md) |
-| academic-writing-style | [README](academic-writing-style/README.md) |
-
-## Usage
+Each skill has its own installation instructions in its README under the **Install only the skill** section. Pick the skill you need from the table above and follow its guide.
 
 After installation, the target agent platform loads the skill automatically from `~/.codex/skills/<skill-name>/`. See each skill's own README for specific usage and examples.
 
