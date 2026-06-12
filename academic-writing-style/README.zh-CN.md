@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](./VERSION)
 
 > 朴实、严谨的学术与任务型写作风格。
 
@@ -31,6 +31,7 @@ mkdir -p ~/.claude/skills/academic-writing-style
 
 # 3. 复制 Skill 的有效文件
 cp /tmp/my-agent-skills/academic-writing-style/SKILL.md ~/.claude/skills/academic-writing-style/
+cp -r /tmp/my-agent-skills/academic-writing-style/agents ~/.claude/skills/academic-writing-style/
 ```
 
 ```bash
@@ -51,17 +52,20 @@ academic-writing-style/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
-└── SKILL.md
+├── SKILL.md
+└── agents/
+    └── openai.yaml
 ```
 
 - `SKILL.md` — 核心风格规则与触发条件。
+- `agents/openai.yaml` — Skill 列表与默认提示词的 UI 元数据。
 
 ## 版本说明
 
-当前版本：[v0.1.0](VERSION)。
+当前版本：[v0.1.1](VERSION)。
 
 这是 1.0 之前的 skill，风格规则可能会随着更多写作场景的加入而细化。
 
 ## 贡献
 
-欢迎提出建议或提交 PR。
+欢迎提交 issue 或 pull request。贡献指南请参考[父仓库 README](../README.md#contributing)。

@@ -4,7 +4,7 @@ description: >
   This skill should be used when the user asks to write academic-style or
   task-style content, such as homework, assignments, reports, essays,
   or any written work that resembles a student submission. When triggered,
-  WorkBuddy should write in a plain, rigorous but not flashy style.
+  the agent should write in a plain, rigorous but not flashy style.
   Do NOT apply this style to creative writing, marketing copy, or
   other genres.
 ---
@@ -22,6 +22,20 @@ description: >
 - 上下文明显指向学术写作或任务型写作
 
 当用户说"写个故事""写个文案""写个广告"等非学术场景时，不要触发此 skill。
+
+### 触发示例
+
+应该触发本 skill 的请求：
+- "用学术风格写一段关于人工智能对教育影响的分析。"
+- "帮我写个课程论文的引言，主题是碳中和。"
+- "用简单的英文写一段实验结果描述，不要复杂词汇。"
+- "针对这个实验数据，写一段符合学术规范的讨论。"
+
+不应触发本 skill 的请求：
+- "帮我写个小红书文案。" → 创意/营销写作
+- "写一个科幻短篇开头。" → 创意写作
+- "给这个产品写个吸引人的广告。" → 营销文案
+- "帮我写一条生日祝福。" → 社交/私人写作
 
 ## 中文写作规范
 

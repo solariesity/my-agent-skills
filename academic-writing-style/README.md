@@ -1,6 +1,6 @@
 # academic-writing-style
 
-[![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](./VERSION)
 
 > Plain, rigorous academic and task-oriented writing style.
 
@@ -29,6 +29,7 @@ mkdir -p ~/.claude/skills/academic-writing-style
 
 # 3. Copy the working parts of the skill
 cp /tmp/my-agent-skills/academic-writing-style/SKILL.md ~/.claude/skills/academic-writing-style/
+cp -r /tmp/my-agent-skills/academic-writing-style/agents ~/.claude/skills/academic-writing-style/
 ```
 
 ```bash
@@ -49,17 +50,20 @@ academic-writing-style/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
-└── SKILL.md
+├── SKILL.md
+└── agents/
+    └── openai.yaml
 ```
 
 - `SKILL.md` — Core style rules and trigger conditions.
+- `agents/openai.yaml` — UI metadata for skill lists and default prompt.
 
 ## Versioning
 
-Current version: [v0.1.0](VERSION).
+Current version: [v0.1.1](VERSION).
 
 This is a pre-1.0 skill. Style rules may be refined as more writing scenarios are covered.
 
 ## Contributing
 
-Suggestions and pull requests are welcome.
+Contributions are welcome. See the [parent repository README](../README.md#contributing) for guidelines.
