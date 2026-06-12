@@ -54,6 +54,22 @@ Current version: v0.1.0
 
 This project follows [Semantic Versioning](https://semver.org/). See [VERSION](VERSION) for the current version number.
 
+## Recommended Skills & Tools
+
+Skills and tools I find useful or worth referencing.
+
+### Skills
+
+| Skill | Repository | Introduction |
+|-------|------------|--------------|
+| andrej-karpathy-skills | https://github.com/duolahypercho/andrej-karpathy-skills | A Codex skill that packages Andrej Karpathy-style coding practices—think first, keep it simple, only make necessary changes, and finish with verifiable goals—to improve the stability and controllability of daily coding agents. |
+
+### MCP Servers
+
+| Tool | Repository | Introduction |
+|------|------------|--------------|
+| CodeGraph | https://github.com/colbymchenry/codegraph | Turns a codebase into a queryable knowledge graph, reducing AI exploration cost by ~70%. |
+
 ## Contributing
 
 Contributions are welcome. Please open an issue or pull request with a clear description of the change.

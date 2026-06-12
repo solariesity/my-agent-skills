@@ -54,6 +54,22 @@ my-agent-skills/
 
 本项目遵循 [Semantic Versioning](https://semver.org/)。当前版本号见 [VERSION](VERSION)。
 
+## 推荐的外部 Skill 与工具
+
+我觉得好用或值得参考的 Skill 与工具。
+
+### Skills
+
+| Skill | 项目地址 | 简介 |
+|-------|----------|------|
+| andrej-karpathy-skills | https://github.com/duolahypercho/andrej-karpathy-skills | 面向 Codex 的 Andrej Karpathy 风格编码规范 Skill，把“先思考、保持简单、只做必要改动、用可验证目标收尾”打包成可复用的 Skill，适合提升日常编码 Agent 的稳定性与可控性。 |
+
+### MCP Servers（工具类）
+
+| 工具 | 项目地址 | 简介 |
+|------|----------|------|
+| CodeGraph | https://github.com/colbymchenry/codegraph | 把代码库变成可查询的图谱，减少 AI 探索成本 ~70%。 |
+
 ## 贡献
 
 欢迎提交 issue 或 pull request，请在描述中清楚说明改动内容。
