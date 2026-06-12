@@ -72,6 +72,7 @@ my-agent-skills/
 
 | Skill | 项目地址 | 简介 |
 |-------|----------|------|
+| nature-skill | TBD | 面向 Nature 风格科研表达的 Skill，适合论文配图、论文转汇报 PPT，以及更精致的学术展示任务。 |
 | ljg-skills | https://github.com/lijigang/ljg-skills | lijigang 的个人 AI Agent Skill 集合。 |
 | andrej-karpathy-skills | https://github.com/duolahypercho/andrej-karpathy-skills | 面向 Codex 的 Andrej Karpathy 风格编码规范 Skill，把“先思考、保持简单、只做必要改动、用可验证目标收尾”打包成可复用的 Skill，适合提升日常编码 Agent 的稳定性与可控性。 |
 
