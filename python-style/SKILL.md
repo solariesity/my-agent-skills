@@ -1,9 +1,9 @@
 ---
-name: python-style-skill
+name: python-style
 description: Behavior-preserving Python style cleanup for research and training code. Use when reviewing or standardizing Python naming, module or file names, Chinese-first comments or docstrings, and stable parseable training or debug output without breaking external contracts.
 ---
 
-# Python Style Skill
+# Python Style
 
 Use this skill to clean or review Python code that has mixed naming, noisy comments, or inconsistent runtime output.
 

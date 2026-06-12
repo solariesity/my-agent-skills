@@ -22,7 +22,7 @@
 |-------|--------|------|
 | memory-router | [README](memory-router/README.md) | 按用户、项目、类型、日期将对话记忆路由到确定性的 Markdown 文件。 |
 | file-router | [README](file-router/README.md) | 将用户文件和生成输出路由到结构化的 `./files/` 工作树。 |
-| python-style-skill | [README](python-style-skill/README.md) | 面向研究和训练代码的行为保持型 Python 风格清理。 |
+| python-style | [README](python-style/README.md) | 面向研究和训练代码的行为保持型 Python 风格清理。 |
 | github-readme-style | [README](github-readme-style/README.md) | 规范 GitHub README，包含中英双语、版本号和目录结构。 |
 | critical-thinking | [README](critical-thinking/README.md) | 用于实质性对话的独立思考与批判性思维。 |
 | paper-review-prep | [README](paper-review-prep/README.md) | 系统性文献分析与组会汇报准备。 |
@@ -47,7 +47,7 @@ my-agent-skills/
 ├── .gitignore
 ├── memory-router/            # 对话记忆路由
 ├── file-router/              # 文件和输出工作树路由
-├── python-style-skill/       # 研究代码的 Python 风格约束
+├── python-style/       # 研究代码的 Python 风格约束
 ├── github-readme-style/      # README 规范化约定
 ├── critical-thinking/        # 独立思考与提出异议的约束
 ├── paper-review-prep/        # 论文阅读和组会汇报准备

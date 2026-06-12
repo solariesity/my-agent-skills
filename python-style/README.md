@@ -1,4 +1,4 @@
-# python-style-skill
+# python-style
 
 [![Version](https://img.shields.io/badge/version-v0.1.0-blue)](./VERSION)
 
@@ -23,12 +23,12 @@ This skill is part of the `my-agent-skills` monorepo. Install it by cloning the 
 git clone git@github.com:solariesity/my-agent-skills.git /tmp/my-agent-skills
 
 # 2. Create the skill directory in the agent's skills folder
-mkdir -p ~/.claude/skills/python-style-skill
+mkdir -p ~/.claude/skills/python-style
 # Or, for Codex:
-# mkdir -p ~/.codex/skills/python-style-skill
+# mkdir -p ~/.codex/skills/python-style
 
 # 3. Copy the working parts of the skill
-cp /tmp/my-agent-skills/python-style-skill/SKILL.md ~/.claude/skills/python-style-skill/
+cp /tmp/my-agent-skills/python-style/SKILL.md ~/.claude/skills/python-style/
 ```
 
 ```bash
@@ -51,7 +51,7 @@ Typical prompts:
 ## Project Structure
 
 ```text
-python-style-skill/
+python-style/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION

@@ -1,4 +1,4 @@
 interface:
   display_name: "Python Style"
   short_description: "Behavior-preserving Python style cleanup for research code."
-  default_prompt: "Use $python-style-skill to clean or review this Python code while preserving behavior."
+  default_prompt: "Use $python-style to clean or review this Python code while preserving behavior."

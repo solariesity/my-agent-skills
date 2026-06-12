@@ -22,7 +22,7 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 |-------|--------|--------------|
 | memory-router | [README](memory-router/README.md) | Route conversational memory into deterministic markdown files by user, project, type, and date. |
 | file-router | [README](file-router/README.md) | Route user files and generated outputs into a structured `./files/` workspace. |
-| python-style-skill | [README](python-style-skill/README.md) | Behavior-preserving Python style cleanup for research and training code. |
+| python-style | [README](python-style/README.md) | Behavior-preserving Python style cleanup for research and training code. |
 | github-readme-style | [README](github-readme-style/README.md) | Standardize GitHub READMEs with bilingual docs, version info, and project structure. |
 | critical-thinking | [README](critical-thinking/README.md) | Independent judgment and critical thinking for substantive conversations. |
 | paper-review-prep | [README](paper-review-prep/README.md) | Systematic research paper analysis and presentation preparation. |
@@ -47,7 +47,7 @@ my-agent-skills/
 ├── .gitignore
 ├── memory-router/            # Conversational memory routing
 ├── file-router/              # File and output workspace routing
-├── python-style-skill/       # Python coding style for research code
+├── python-style/       # Python coding style for research code
 ├── github-readme-style/      # README standardization conventions
 ├── critical-thinking/        # Reasoning and disagreement guidelines
 ├── paper-review-prep/        # Paper reading and presentation prep

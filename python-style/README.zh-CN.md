@@ -1,4 +1,4 @@
-# python-style-skill
+# python-style
 
 [English](README.md)
 
@@ -25,12 +25,12 @@
 git clone git@github.com:solariesity/my-agent-skills.git /tmp/my-agent-skills
 
 # 2. 在 Agent 的 skills 目录下创建本 Skill 的子目录
-mkdir -p ~/.claude/skills/python-style-skill
+mkdir -p ~/.claude/skills/python-style
 # 如果是 Codex，使用：
-# mkdir -p ~/.codex/skills/python-style-skill
+# mkdir -p ~/.codex/skills/python-style
 
 # 3. 复制 Skill 的有效文件
-cp /tmp/my-agent-skills/python-style-skill/SKILL.md ~/.claude/skills/python-style-skill/
+cp /tmp/my-agent-skills/python-style/SKILL.md ~/.claude/skills/python-style/
 ```
 
 ```bash
@@ -53,7 +53,7 @@ rm -rf /tmp/my-agent-skills
 ## 项目结构
 
 ```text
-python-style-skill/
+python-style/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
