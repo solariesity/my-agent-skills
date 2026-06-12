@@ -1,6 +1,6 @@
 # My Agent Skills
 
-[![Version](https://img.shields.io/badge/version-v0.3.2-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.3.3-blue)](./VERSION)
 
 A unified collection of personal AI agent / Codex skills for deterministic memory routing, file routing, coding style enforcement, and task-specific reasoning.
 
@@ -59,7 +59,7 @@ my-agent-skills/
 
 ## Versioning
 
-Current version: v0.3.2
+Current version: v0.3.3
 
 This project follows [Semantic Versioning](https://semver.org/). See [VERSION](VERSION) for the current version number.
 

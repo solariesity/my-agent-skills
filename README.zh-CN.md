@@ -1,6 +1,6 @@
 # My Agent Skills
 
-[![Version](https://img.shields.io/badge/version-v0.3.2-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.3.3-blue)](./VERSION)
 
 统一的个人 AI Agent / Codex Skill 集合，用于确定性记忆路由、文件路由、代码风格约束以及任务型推理。
 
@@ -59,7 +59,7 @@ my-agent-skills/
 
 ## 版本
 
-当前版本：v0.3.2
+当前版本：v0.3.3
 
 本项目遵循 [Semantic Versioning](https://semver.org/)。当前版本号见 [VERSION](VERSION)。
 

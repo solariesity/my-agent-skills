@@ -1,6 +1,6 @@
 # Memory Router
 
-[![Version](https://img.shields.io/badge/version-v0.5.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.5.1-blue)](./VERSION)
 
 > Route conversational memory into deterministic markdown files instead of dumping everything into one flat log.
 
@@ -89,6 +89,7 @@ memory-router/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
+├── .gitignore
 ├── SKILL.md
 ├── VERSION_RECORDS.md
 ├── agents/
@@ -179,9 +180,9 @@ Recall is currently line-match based rather than semantic ranking based.
 
 ## Versioning
 
-Current version: [v0.5.0](VERSION).
+Current version: [v0.5.1](VERSION).
 
-memory-router follows semantic versioning in spirit. `v0.5.0` means the routing model, write semantics, recall boundaries, and heuristic decision layer are stable enough for real use, but decision quality and recall quality still have room to improve before a `1.0.0` release.
+memory-router follows semantic versioning in spirit. `v0.5.1` means the routing model, write semantics, recall boundaries, and heuristic decision layer are stable enough for real use, but decision quality and recall quality still have room to improve before a `1.0.0` release.
 
 The local version roadmap is tracked in [VERSION_RECORDS.md](VERSION_RECORDS.md).
 
@@ -213,7 +214,7 @@ Current coverage includes:
 
 ## Contributing
 
-Suggestions and pull requests are welcome.
+Contributions are welcome. See the [parent repository README](../README.md#contributing) for guidelines.
 
 ## Design Principles
 

@@ -6,14 +6,27 @@ description: Route conversational memory into structured markdown files instead 
 # Memory Router
 
 Use this skill when memory should be organized, inspectable, and easy to recall later.
-This repository is currently documented as `v0.5.0`, which adds first-use legacy-memory migration rules, a cleaner `MEMORY.md` handoff model, and clearer single-source-of-truth guidance for durable memory.
-
 Prefer it over a single append-only note when the user has:
 
 - multiple projects
 - multiple users
 - long-running sessions
 - stable preferences or facts worth preserving
+
+## 触发条件
+
+当 agent 需要在以下场景持久化信息时，自动应用此规范：
+- 用户表达了稳定的偏好或工作流习惯（如"回答简洁点""默认用中文"）
+- 需要记住用户身份、背景、长期目标等个人信息
+- 项目中产生了重要决策、架构约束或环境配置
+- 需要记录任务状态、待办事项或下一步计划
+- 会话结束时需要保存摘要供后续回溯
+- 用户明确说"记住这个""保存下来""以后也要知道这个"
+
+**不适用场景**：
+- 临时闲聊、一次性措辞、低价值的寒暄（如"好的""明白了"）
+- 密码、密钥、Token 等敏感凭证（严禁存入 Markdown 记忆）
+- 已有独立持久化方案的项目（不冲突）
 
 ## Use The Main Entry Point
 

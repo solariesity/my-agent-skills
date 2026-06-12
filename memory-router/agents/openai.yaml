@@ -1,3 +1,4 @@
-display_name: memory-router
-short_description: Route conversational memory into structured files by user, project, type, and time.
-default_prompt: Use memory-router to decide whether a conversation detail should be persisted, classify it, resolve the correct route, remember it safely with exact dedupe by default or explicit topic-aware upsert when a stable topic exists, and recall it from the same routed scope through the main CLI or helper scripts. The current heuristic decision layer handles common English and Chinese cues for trivial chat, preferences, tasks, and topic inference.
+interface:
+  display_name: "Memory Router"
+  short_description: "Route conversational memory into structured files by user, project, type, and time."
+  default_prompt: "Use $memory-router to decide, classify, route, remember, and recall durable conversational memory."

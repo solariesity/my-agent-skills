@@ -2,7 +2,7 @@
 
 [English](README.md)
 
-[![Version](https://img.shields.io/badge/version-v0.5.0-blue)](./VERSION)
+[![Version](https://img.shields.io/badge/version-v0.5.1-blue)](./VERSION)
 
 > 将对话记忆路由到确定性的 Markdown 文件，而不是全部丢进一个平铺的日志里。
 
@@ -91,6 +91,7 @@ memory-router/
 ├── README.md
 ├── README.zh-CN.md
 ├── VERSION
+├── .gitignore
 ├── SKILL.md
 ├── VERSION_RECORDS.md
 ├── agents/
@@ -181,9 +182,9 @@ memory-router 按以下四个维度路由记忆：
 
 ## 版本说明
 
-当前版本：[v0.5.0](VERSION)。
+当前版本：[v0.5.1](VERSION)。
 
-memory-router 在精神上遵循语义化版本。`v0.5.0` 表示路由模型、写入语义、recall 边界和启发式决策层已经稳定到可以认真使用，但决策质量和 recall 质量在达到 `1.0.0` 之前仍有提升空间。
+memory-router 在精神上遵循语义化版本。`v0.5.1` 表示路由模型、写入语义、recall 边界和启发式决策层已经稳定到可以认真使用，但决策质量和 recall 质量在达到 `1.0.0` 之前仍有提升空间。
 
 本地版本路线记录见 [VERSION_RECORDS.md](VERSION_RECORDS.md)。
 
@@ -215,7 +216,7 @@ python -m unittest discover -s tests -v
 
 ## 贡献
 
-欢迎提出建议或提交 PR。
+欢迎提交 issue 或 pull request。贡献指南请参考[父仓库 README](../README.md#contributing)。
 
 ## 设计原则
 
