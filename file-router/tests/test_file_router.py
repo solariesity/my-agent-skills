@@ -23,7 +23,7 @@ from file_router_core import (
 )  # noqa: E402
 
 
-class file-routerTests(unittest.TestCase):
+class FileRouterTests(unittest.TestCase):
     def test_decide_screenshot_defaults_to_media(self) -> None:
         decision = decide_route(source="Screenshot 2026-06-08.png", context="聊天截图", origin="incoming")
         self.assertEqual(decision["domain"], "media")
