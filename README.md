@@ -1,7 +1,5 @@
 # My Agent Skills
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
 A unified collection of personal AI agent / Codex skills for deterministic memory routing, file routing, coding style enforcement, and task-specific reasoning.
 
 ## Description
@@ -18,32 +16,21 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 
 ## Installation
 
-Each skill is a self-contained directory. Pick the skill you need from the table below and install it to `~/.codex/skills/`:
+Each skill has its own installation instructions in its README under the **Install only the skill** section. Pick the skill you need and follow its guide:
 
-```bash
-# 1. Clone to a temporary location
-git clone https://github.com/<your-username>/my-agent-skills.git /tmp/my-agent-skills
-
-# 2. Copy the skill you want
-cp -r /tmp/my-agent-skills/<skill-name> ~/.codex/skills/<skill-name>
-
-# 3. Remove the temporary clone
-rm -rf /tmp/my-agent-skills
-```
-
-| Skill | Directory | Install path |
-|-------|-----------|--------------|
-| memory-router | [memory-router/](memory-router/) | `~/.codex/skills/memory-router` |
-| file-router | [file-router/](file-router/) | `~/.codex/skills/file-router` |
-| python-style-skill | [python-style-skill/](python-style-skill/) | `~/.codex/skills/python-style-skill` |
-| github-readme-style | [github-readme-style/](github-readme-style/) | `~/.codex/skills/github-readme-style` |
-| critical-thinking | [critical-thinking/](critical-thinking/) | `~/.codex/skills/critical-thinking` |
-| paper-review-prep | [paper-review-prep/](paper-review-prep/) | `~/.codex/skills/paper-review-prep` |
-| academic-writing-style | [academic-writing-style/](academic-writing-style/) | `~/.codex/skills/academic-writing-style` |
+| Skill | README |
+|-------|--------|
+| memory-router | [README](memory-router/README.md) |
+| file-router | [README](file-router/README.md) |
+| python-style-skill | [README](python-style-skill/README.md) |
+| github-readme-style | [README](github-readme-style/README.md) |
+| critical-thinking | [README](critical-thinking/README.md) |
+| paper-review-prep | [README](paper-review-prep/README.md) |
+| academic-writing-style | [README](academic-writing-style/README.md) |
 
 ## Usage
 
-After installation, the target agent platform loads the skill automatically from `~/.codex/skills/<skill-name>/`. See each skill's own `README.md` for specific usage and examples.
+After installation, the target agent platform loads the skill automatically from `~/.codex/skills/<skill-name>/`. See each skill's own README for specific usage and examples.
 
 ## Project Structure
 
@@ -51,8 +38,6 @@ After installation, the target agent platform loads the skill automatically from
 my-agent-skills/
 ├── README.md
 ├── README.zh-CN.md
-├── VERSION
-├── LICENSE
 ├── memory-router/            # Conversational memory routing
 ├── file-router/              # File and output workspace routing
 ├── python-style-skill/       # Python coding style for research code
@@ -62,16 +47,6 @@ my-agent-skills/
 └── academic-writing-style/   # Academic writing style guide
 ```
 
-## Versioning
-
-Current version: v0.1.0
-
-This project follows [Semantic Versioning](https://semver.org/). See [VERSION](VERSION) for the current version number.
-
 ## Contributing
 
 Contributions are welcome. Please open an issue or pull request with a clear description of the change.
-
-## License
-
-This project is released under the MIT License. See [LICENSE](LICENSE) for details.
