@@ -18,24 +18,32 @@
 
 ## 安装
 
-Skill 以普通目录形式分发。要安装单个 Skill 而不永久克隆整个仓库：
+每个 Skill 都是独立的目录。从下表选择你需要的 Skill，安装到 `~/.codex/skills/`：
 
 ```bash
 # 1. 克隆到临时目录
 git clone https://github.com/<your-username>/my-agent-skills.git /tmp/my-agent-skills
 
-# 2. 复制你需要的 Skill
-cp -r /tmp/my-agent-skills/file-router ~/.codex/skills/file-router
+# 2. 复制你想要的 Skill
+cp -r /tmp/my-agent-skills/<skill-name> ~/.codex/skills/<skill-name>
 
 # 3. 删除临时克隆
 rm -rf /tmp/my-agent-skills
 ```
 
-将 `file-router` 替换为你实际需要的 Skill 目录名。
+| Skill | 目录 | 安装路径 |
+|-------|------|----------|
+| memory-router | [memory-router/](memory-router/) | `~/.codex/skills/memory-router` |
+| file-router | [file-router/](file-router/) | `~/.codex/skills/file-router` |
+| python-style-skill | [python-style-skill/](python-style-skill/) | `~/.codex/skills/python-style-skill` |
+| github-readme-style | [github-readme-style/](github-readme-style/) | `~/.codex/skills/github-readme-style` |
+| critical-thinking | [critical-thinking/](critical-thinking/) | `~/.codex/skills/critical-thinking` |
+| paper-review-prep | [paper-review-prep/](paper-review-prep/) | `~/.codex/skills/paper-review-prep` |
+| academic-writing-style | [academic-writing-style/](academic-writing-style/) | `~/.codex/skills/academic-writing-style` |
 
 ## 使用
 
-安装完成后，目标 Agent 平台会自动从 `~/.codex/skills/<skill-name>/` 加载该 Skill。例如，在 Claude Code 中，`file-router` Skill 会引导 Agent 将用户文件和生成输出路由到结构化的 `./files/` 工作树。
+安装完成后，目标 Agent 平台会自动从 `~/.codex/skills/<skill-name>/` 加载该 Skill。具体用法和示例请参考各 Skill 目录下的 `README.md`。
 
 ## 目录结构
 

@@ -18,24 +18,32 @@ This repository consolidates scattered skill projects into a single monorepo. Ea
 
 ## Installation
 
-Skills are distributed as plain directories. To install a single skill without cloning the entire repository permanently:
+Each skill is a self-contained directory. Pick the skill you need from the table below and install it to `~/.codex/skills/`:
 
 ```bash
 # 1. Clone to a temporary location
 git clone https://github.com/<your-username>/my-agent-skills.git /tmp/my-agent-skills
 
-# 2. Copy the skill you need
-cp -r /tmp/my-agent-skills/file-router ~/.codex/skills/file-router
+# 2. Copy the skill you want
+cp -r /tmp/my-agent-skills/<skill-name> ~/.codex/skills/<skill-name>
 
 # 3. Remove the temporary clone
 rm -rf /tmp/my-agent-skills
 ```
 
-Replace `file-router` with the skill directory you want.
+| Skill | Directory | Install path |
+|-------|-----------|--------------|
+| memory-router | [memory-router/](memory-router/) | `~/.codex/skills/memory-router` |
+| file-router | [file-router/](file-router/) | `~/.codex/skills/file-router` |
+| python-style-skill | [python-style-skill/](python-style-skill/) | `~/.codex/skills/python-style-skill` |
+| github-readme-style | [github-readme-style/](github-readme-style/) | `~/.codex/skills/github-readme-style` |
+| critical-thinking | [critical-thinking/](critical-thinking/) | `~/.codex/skills/critical-thinking` |
+| paper-review-prep | [paper-review-prep/](paper-review-prep/) | `~/.codex/skills/paper-review-prep` |
+| academic-writing-style | [academic-writing-style/](academic-writing-style/) | `~/.codex/skills/academic-writing-style` |
 
 ## Usage
 
-After installation, the target agent platform will load the skill automatically from `~/.codex/skills/<skill-name>/`. For example, in Claude Code the `file-router` skill guides the agent to route user files and generated outputs into a structured `./files/` workspace.
+After installation, the target agent platform loads the skill automatically from `~/.codex/skills/<skill-name>/`. See each skill's own `README.md` for specific usage and examples.
 
 ## Project Structure
 
